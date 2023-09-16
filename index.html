@@ -14,7 +14,7 @@
 <body>
     <header>
         <img src="images/profile-photo.png" alt="Diego Vasquez profile's picture">
-        <h1>Diego Vasquez</h1>
+        <h1>DIEGO VASQUEZ MEJIA</h1>
     </header>
     <nav>
         <ul>
@@ -27,10 +27,13 @@
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
+        <div id="line"></div>
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
-                <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | </li>
+                <li>01: <a href="lesson01/holygrail.html" target="_blank">Holy Layout</a> | 
+                    <a href="https://codepen.io/davm07/pen/KKbmNqZ" target="_blank">JS Pen</a>
+                </li>
                 <li>02: <a href=""></a></li>
                 <li>03: <a href=""></a></li>
                 <li>04: <a href=""></a></li>
@@ -42,8 +45,22 @@
                 <li>10: <a href=""></a></li>
             </ul>
         </section>
+        <section class="card">
+            <h3>Information</h3>
+            <div id="weather-info">
+                <p id="location">City, Country</p>
+                <p id="temperature">🌞 Example Temperature</p>
+                <p id="page-visits">Page Visits: 300</p>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p id="personal-info">&copy;<span id="current-year"></span>
+            | Diego Vasquez Mejia
+            | El Salvador <img src="images/sv-flag.png" alt="El Salvador flag" id="flag">
+        </p>
+        <p>Last Modification: <span id="last-modification"></span></p>
+    </footer>
     <script src="scripts/getdates.js"></script>
 </body>
 </html>
