@@ -1,4 +1,8 @@
 @media screen and (min-width: 38rem){
+    header {
+        gap: 3rem;
+    }
+    
     #menu {
         display: none;
     }
