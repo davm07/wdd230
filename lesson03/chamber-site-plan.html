@@ -10,7 +10,7 @@
             developed by Diego Vasquez WDD230 - Frontend Development">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/second-view.css">
     <title>Lommel city Chamber Site Plan</title>
 </head>
 <body>
@@ -22,12 +22,15 @@
     <main>
         <section>
             <h2>Site Purpose:</h2>
-            <p>The Lommel Chamber of Commerce serves as a networking platform for local businesses and community members helping them increase business opportunities in the area. The chamber promotes activities, events and festivals that generate a positive impact on the local economy.</p>
-            <p></p>
+            <p>The two main purposes of the Lommel Chamber of Commerce are:</p>
+            <ol class="purposes">
+                <li>It serves as a networking platform for local businesses and community members helping them increase business opportunities in the area.</li>
+                <li>The chamber promotes activities, events and festivals that generate a positive impact on the local economy.</li>
+            </ol>
         </section>
         <section>
             <h2>Scenarios:</h2>
-            <ul>
+            <ul class="scenarios">
                 <li>Where can I find information to start my business in the local area?</li>
                 <li>Where can I find job openings in the local businesses?</li>
                 <li>How can I get in contact with a determined business or company in the local area?</li>
@@ -36,26 +39,38 @@
         <section>
             <h2>Color Schema:</h2>
             <p>Palette URL:</p>
-            <a href="https://coolors.co/ffffff-1574a4-5b5b5b-e9a127"
-            target="_blank">https://coolors.co/ffffff-1574a4-5b5b5b-e9a127</a>
+            <a href="https://coolors.co/ffffff-aa1464-8c410a-555555"
+            target="_blank">https://coolors.co/ffffff-aa1464-8c410a-555555</a>
 
-            <table class="colors">
-            <tr>
-                <th>Primary</th>
-                <th>Secondary</th>
-                <th>Accent 1</th>
-                <th>Accent 2</th>
-            </tr>
-            <tr>
-                <td class="primary">[#FFFFFF]</td>
-                <td class="secondary">[#1574A4]</td>
-                <td class="accent1">[#5B5B5B]</td>
-                <td class="accent2">[#E9A127]</td>
-            </tr>
-    </table>
+            <div class="table-container">
+                <table class="colors">
+                    <tr>
+                        <th>Primary</th>
+                        <th>Secondary</th>
+                        <th>Accent 1</th>
+                        <th>Accent 2</th>
+                    </tr>
+                    <tr>
+                        <td class="primary">[#FFFFFF]</td>
+                        <td class="secondary">[#1574A4]</td>
+                        <td class="accent1">[#5B5B5B]</td>
+                        <td class="accent2">[#E9A127]</td>
+                    </tr>
+                </table>
+            </div>
         </section>
         <section>
             <h2>Typography:</h2>
+            <p>Heading Font: <span id="heading">Bitter</span></p>
+            <p>Paragraph Font: <span id="paragraph">Poppins</span></p>
+            <h3>Normal paragraph example</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet aliquam id. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Amet facilisis magna etiam tempor. Quis auctor elit sed vulputate mi sit amet. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Est ultricies integer quis auctor elit.
+            </p>
+            <h3>Colored paragraph example</h3>
+            <p class="colored">
+                Eget aliquet nibh praesent tristique magna sit. Sit amet mattis vulputate enim nulla aliquet. Gravida arcu ac tortor dignissim convallis aenean. Eu ultrices vitae auctor eu augue ut lectus arcu. Felis eget velit aliquet sagittis id consectetur purus ut. Purus ut faucibus pulvinar elementum integer. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.
+            </p>
         </section>
         <section>
             <h2>Wireframes:</h2>
@@ -70,8 +85,12 @@
         </section>
     </main>
     <footer>
-        
+        <p>&copy;<span id="current-year"></span>
+            | Diego Vasquez Mejia
+            | WDD230
+        </p>
+        <p>Last Modification: <span id="last-modification"></span></p>
     </footer>
-    
+    <script src="/scripts/getdates.js"></script>
 </body>
 </html>
