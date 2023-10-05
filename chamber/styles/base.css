@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Poppins&display=swap');
+
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #AA1464;
+    --accent1-color: #8c410a;
+    --accent2-color: #555555;
+    
+    --heading-font: 'Bitter', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --headline-color-on-white: #8c410a;  /* headlines on a white background */ 
+    --headline-color-on-color: #FFFFFF ; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #555555; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #AA1464;
+}
+body {
+    font-family: var(--paragraph-font);
+    margin: .5rem;
+    min-width: 200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: var(--paragraph-color-on-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    margin-bottom: .8rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.title-logo-container {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+.title-logo-container h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(.6rem, 1.1rem, 1.2rem);
+}
+
+.title-logo-container img {
+    width: 3rem;
+    height: 3rem;
+}
+
+#menu-btn {
+    top: 2.2rem;
+    right: .7rem;
+    position: absolute;
+    font-size: clamp(.7rem, 1.5rem, 1.8rem);
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+}
+
+#menu-btn::before {
+    content: "☰";
+}
+
+#menu-btn.open::before {
+    content: "X";
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    font-size: .9rem;
+    display: block;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+    color: var(--tertiary-color);
+}
+
+.open {
+    display: block;
+}
+
+.navigation.open{
+    top: 5rem;
+    right: .5rem;
+    position: absolute;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+}
+
+.open li{
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+    text-align: right;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
