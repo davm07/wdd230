@@ -96,9 +96,9 @@ header {
 }
 
 .navigation a:hover {
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     transition: 0.5s;
-    color: var(--tertiary-color);
+    color: var(--paragraph-color-on-color);
 }
 
 .open {
@@ -146,6 +146,7 @@ header {
 
 .btn-cta{
     border: none;
+    font-family: var(--heading-font);
     border-radius: 6px;
     padding: .7rem 1.4rem;
     color: var(--paragraph-color-on-color);
@@ -190,7 +191,6 @@ footer{
     color: var(--paragraph-color-on-color);
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
-    margin-bottom: .8rem;
     background-color: var(--secondary-color);
     padding: 1rem;
 }
@@ -199,6 +199,10 @@ footer{
     display: flex;
     align-items: center;
     column-gap: .6rem;
+}
+
+hr{
+    color: var(--primary-color);
 }
 
 .final h4{
