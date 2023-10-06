@@ -162,7 +162,7 @@ header {
 /* Cards css */
 .card {
     padding: .8rem;
-    background-color: #54545409;
+    background-color: #54545403;
     margin-top: .8rem;
     border: 2px solid var(--accent2-color);
     text-align: center;
@@ -178,7 +178,7 @@ header {
 }
 
 .card h3 {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
 }
 
 .splt {
