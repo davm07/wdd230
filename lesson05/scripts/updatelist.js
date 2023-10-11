@@ -2,24 +2,32 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-button.addEventListener('click', () => {
-    if(input.value != "") {
+const updateList = () => {
+    if (input.value != "") {
         // list.innerHTML += `<li>${input.value}</li>`
-        const li = document.createElement('li');
-        const deleteButton = document.createElement('button');
+        const li = document.createElement("li");
+        const deleteButton = document.createElement("button");
         li.textContent = input.value;
-        deleteButton.textContent = '❌';
+        deleteButton.textContent = "❌";
         li.append(deleteButton);
         list.append(li);
-        input.value = "";
-
-        deleteButton.addEventListener('click', () => {
+        
+        deleteButton.addEventListener("click", () => {
             list.removeChild(li);
             input.focus();
-        })
-        
+        });
+        deleteButton.setAttribute("aria-label", "Remove " + input.value);
+        input.value = "";
     } else {
         alert("Please type in your favorite chapter!");
         input.focus();
     }
+    };
+
+button.addEventListener('click', () => {
+    updateList();
+})
+
+input.addEventListener('keypress', (event) => {
+    if (event.keyCode === 13) updateList();
 })
