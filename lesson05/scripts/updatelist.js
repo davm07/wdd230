@@ -1,6 +1,6 @@
-const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
-const list = document.querySelector('#list');
+const input = document.querySelector("#favchap");
+const button = document.querySelector("button");
+const list = document.querySelector("#list");
 
 const updateList = () => {
     if (input.value != "") {
@@ -24,10 +24,10 @@ const updateList = () => {
     }
     };
 
-button.addEventListener('click', () => {
+button.addEventListener("click", () => {
     updateList();
 })
 
-input.addEventListener('keypress', (event) => {
+input.addEventListener("keypress", (event) => {
     if (event.keyCode === 13) updateList();
 })
