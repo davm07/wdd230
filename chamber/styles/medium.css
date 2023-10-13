@@ -8,8 +8,12 @@
         height: 4rem;
     }
 
+    .switch {
+        top: 1.5rem;
+    }
+
     #menu-btn {
-        top: 2.8rem;
+        top: 2.9rem;
         font-size: clamp(.9rem, 1.7rem, 2.1rem);
     }
 

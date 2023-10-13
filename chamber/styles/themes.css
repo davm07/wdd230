@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Poppins&display=swap');
+
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #AA1464;
+    --accent1-color: #8c410a;
+    --accent2-color: #555555;
+    
+    --heading-font: 'Bitter', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --headline-color-on-white: var(--accent1-color);  /* headlines on a white background */ 
+    --headline-color-on-color: var(--primary-color); /* headlines on a colored background */ 
+    --paragraph-color-on-white: var(--accent2-color); /* paragraph text on a white background */ 
+    --paragraph-color-on-color: var(--primary-color); /* paragraph text on a colored background */ 
+    --paragraph-background-color: var(--secondary-color);
+    --button-background-color: var(--accent2-color);
+    --button-background-hover: var(--accent1-color);
+    --button-paragraph-color: var(--primary-color);
+
+    --container-shadow: 1px 1px 6px 0px rgba(0,0,0,0.35);;
+}
+
+.dark {
+
+    --primary-color: #292929;
+    --secondary-color: #555555;
+    --accent1-color: #ffa05c;
+
+    --headline-color-on-white: var(--accent1-color);
+    --paragraph-color-on-white: #FFFFFF;
+    --button-background-color: var(--accent1-color);
+    --button-background-hover: #AA1464;
+}
