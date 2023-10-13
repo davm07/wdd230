@@ -17,6 +17,7 @@
     --button-background-color: var(--accent2-color);
     --button-background-hover: var(--accent1-color);
     --button-paragraph-color: var(--primary-color);
+    --button-paragraph-hover: var(--primary-color);
 
     --container-shadow: 1px 1px 6px 0px rgba(0,0,0,0.35);;
 }
@@ -29,6 +30,8 @@
 
     --headline-color-on-white: var(--accent1-color);
     --paragraph-color-on-white: #FFFFFF;
+    --button-paragraph-color: var(--primary-color);
     --button-background-color: var(--accent1-color);
     --button-background-hover: #AA1464;
+    --button-paragraph-hover: #FFFFFF;
 }
