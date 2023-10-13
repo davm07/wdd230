@@ -14,10 +14,12 @@
     --paragraph-color-on-white: #555555; /* paragraph text on a white background */ 
     --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
     --paragraph-background-color: #AA1464;
+
+    --container-shadow: 1px 1px 6px 0px rgba(0,0,0,0.35);;
 }
 body {
     font-family: var(--paragraph-font);
-    margin: .5rem;
+    margin: 1rem;
     min-width: 200px;
     font-size: .85rem;
 }
@@ -32,6 +34,7 @@ header {
     margin-bottom: .8rem;
     background-color: var(--secondary-color);
     padding: 1rem;
+    box-shadow: var(--container-shadow);
 }
 
 .container.title{
@@ -42,9 +45,17 @@ header {
     gap: .5rem;
 }
 
-.title h1 {
+.title-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: var(--heading-font);
-    font-size: clamp(.6rem, 1.2rem, 1.8rem);
+    font-size: 1.8rem;
+}
+
+.title-wrapper span {
+    font-size: .9rem;
+    font-weight: lighter;
 }
 
 .container img {
@@ -54,8 +65,8 @@ header {
 
 /* Navigation css */
 #menu-btn {
-    top: 2.2rem;
-    right: .7rem;
+    top: 2.5rem;
+    right: 1.5rem;
     position: absolute;
     font-size: clamp(.7rem, 1.5rem, 1.8rem);
     background-color: transparent;
@@ -107,7 +118,7 @@ header {
 
 .navigation.open{
     top: 5rem;
-    right: .5rem;
+    right: 1rem;
     position: absolute;
     background-color: var(--secondary-color);
     border-radius: 6px;
@@ -124,18 +135,19 @@ header {
 }
 
 /* Hero css */
+main {
+    margin: 1rem 0;
+}
 
 .hero {
+    height: 200px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    background-image: url('../images/lommel-hero.webp');
+    background-size:cover;
+    background-position: center;
+    box-shadow: var(--container-shadow);
 }
 
 .btn{
@@ -163,9 +175,10 @@ header {
 .card {
     padding: .8rem;
     background-color: #54545403;
-    margin-top: .8rem;
+    margin-top: 1.2rem;
     border: 2px solid var(--accent2-color);
     text-align: center;
+    box-shadow: var(--container-shadow);
 }
 
 .card h2, .card h3{
@@ -184,6 +197,7 @@ header {
 .splt {
     border: none;
     background-color: transparent;
+    box-shadow: none;
 }
 
 /* Footer CSS */
@@ -193,10 +207,13 @@ footer{
     border-radius: 8px;
     background-color: var(--secondary-color);
     padding: 1rem;
+    box-shadow: var(--container-shadow);
 }
 
 .container.final {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     column-gap: .6rem;
 }
@@ -206,10 +223,16 @@ hr{
 }
 
 .final h4{
-    font-size: .95rem;
+    font-size: 1.5rem;
     font-family: var(--heading-font);
 }
 
+.contact-info p{
+    text-align: center;
+    margin: .5rem 0;
+}
+
 .my-info p{
+    font-weight: bold;
     text-align: center;
 }

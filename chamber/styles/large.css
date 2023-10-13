@@ -3,10 +3,6 @@
         gap: 1rem;
     }
 
-    .title h1{
-        font-size: clamp(1.4rem, 1.7rem, 2.7rem);
-    }
-
     #menu-btn {
         display: none;
     }
@@ -29,23 +25,40 @@
     }
 
     main {
-        margin: 0 1rem;
         display: grid;
         grid-template-areas: 
             'hero hero hero hero'
             'card1 card1 card1 card2'
             'card1 card1 card1 card2'
             'splt splt splt splt';
-        column-gap: 1.2rem;
+        column-gap: 1.5rem;
+    }
+
+    .hero {
+        height: 500px;
     }
 
     .splt{
         grid-template-areas: 
             'member1 member2 member3';
-        column-gap: 1.2rem;
+        column-gap: 1.5rem;
     }
 
     .splt h2{
         display: none;
     }
+
+    .container.final {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .title-footer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        text-align: left;
+    }
+
+    
 }
