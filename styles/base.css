@@ -16,6 +16,7 @@
 
 body {
     margin: auto;
+    min-width: 300px;
     padding: 0;
     text-align: center;
     background-color: var(--secondary-color);
@@ -102,7 +103,7 @@ header h1{
 main {
     margin: 2rem auto;
     padding: 1rem;
-    max-width: 1280px;
+    max-width: 960px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.3rem;
