@@ -1,8 +1,10 @@
 body {
     background-color: var(--primary-color);
     font-family: var(--paragraph-font);
-    margin: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
     min-width: 200px;
+    max-width: 1500px;
     font-size: .85rem;
     color: var(--paragraph-color-on-white);
 }
@@ -182,20 +184,19 @@ main {
 }
 
 .hero {
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background-image: url('../images/lommel-hero.webp');
-    background-size:cover;
-    background-position: center;
-    box-shadow: var(--container-shadow);
+    position: relative;
 }
 
-.btn{
-    margin:auto;
-    grid-column: 1/2;
-    grid-row: 1/2;
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .btn-cta{

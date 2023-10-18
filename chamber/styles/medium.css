@@ -36,7 +36,6 @@
     }
 
     .hero {
-        height: 400px;
         grid-area: hero;
     }
 
