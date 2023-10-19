@@ -35,6 +35,14 @@
         column-gap: 1.5rem;
     }
 
+    .herolabel.large {
+        display: block;
+    }
+
+    .herolabel.medium {
+        display: none;
+    }
+
     .splt{
         grid-template-areas: 
             'member1 member2 member3';
