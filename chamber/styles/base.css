@@ -185,6 +185,7 @@ main {
 
 .hero {
     position: relative;
+    z-index: -1;
 }
 
 .hero img{
