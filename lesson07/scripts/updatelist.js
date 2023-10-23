@@ -25,7 +25,7 @@ function setChapterList() {
 };
 
 function getChapterList() {
-    JSON.parse(localStorage.getItem('myFavBOMList'));
+    return JSON.parse(localStorage.getItem('myFavBOMList'));
 };
 
 function deleteChapter(chapter) {
