@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Vasquez">
+    <meta 
+        name="description" 
+        content="This activity is to test the Lazy Loading attribute that images have in order to improve the 
+        performance of the pages by loading only the necessary resources. Created by Diego Vasquez for WDD230 Course">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <title>Lazy Load Demonstration</title>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Demonstration</h1>
+    </header>
+    <main>
+        <img src="http://placekitten.com/400/600" alt="Placeholder Cute Kitten" loading="lazy" width="400" height="600">
+        <img src="http://placekitten.com/400/650" alt="Placeholder Cute Kitten" loading="lazy" width="400" height="600">
+        <img src="http://placekitten.com/400/700" alt="Placeholder Cute Kitten" loading="lazy" width="400" height="600">
+        <img src="http://placekitten.com/400/750" alt="Placeholder Cute Kitten" loading="lazy" width="400" height="600">
+        <img src="http://placekitten.com/400/800" alt="Placeholder Cute Kitten" loading="lazy" width="400" height="600">
+        <img src="http://placekitten.com/400/850" alt="Placeholder Cute Kitten" loading="lazy" width="400" height="600">
+    </main>
+    <footer>
+        <p>&copy;<span id="current-year"></span>
+            | Diego Vasquez Mejia
+            | Lazy Loading WDD230
+        </p>
+        <p>Last Modification: <span id="last-modification"></span></p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+</body>
+</html>
