@@ -303,3 +303,41 @@ hr{
     font-weight: bold;
     text-align: center;
 }
+
+/*-----Discover page HTML-----*/
+.discover-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+}
+
+.side-content {
+    padding: 1rem;
+    border: 2px solid var(--accent2-color);
+    box-shadow: var(--container-shadow);
+}
+
+.side-content h2, .gallery h2 {
+    margin-top: 0;
+}
+
+.side-img {
+    text-align: center;
+}
+
+.side-img img{
+    max-width: 290px;
+    width: 100%;
+}
+
+.gallery {
+    padding: 1rem;
+    border: 2px solid var(--accent2-color);
+    box-shadow: var(--container-shadow);
+}
