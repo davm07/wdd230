@@ -18,6 +18,7 @@ const updateList = () => {
         });
         deleteButton.setAttribute("aria-label", "Remove " + input.value);
         input.value = "";
+        input.focus();
     } else {
         alert("Please type in your favorite chapter!");
         input.focus();
