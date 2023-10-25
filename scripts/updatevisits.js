@@ -6,6 +6,7 @@ if (visitsNum !== 0) {
     visitsDisplay.textContent = visitsNum;
 } else {
     visitsDisplay.textContent = `Welcome! This is your first visit! 🤓`;
+    visitsNum++;
 }
 
 visitsNum++;
