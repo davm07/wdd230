@@ -93,5 +93,13 @@
     }
 
     /* Discover Page */
-    
+    .discover-main {
+        grid-template-areas: none;
+        grid-template-columns: .2fr 1fr;
+        margin: 0 auto;
+    }
+
+    .discover-img {
+        margin-top: 2.5rem;
+    }
 }

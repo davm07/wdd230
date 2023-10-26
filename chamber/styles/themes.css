@@ -19,7 +19,7 @@
     --button-paragraph-color: var(--primary-color);
     --button-paragraph-hover: var(--primary-color);
 
-    --container-shadow: 1px 1px 6px 0px rgba(0,0,0,0.35);;
+    --container-shadow: 0px 0px 15px 0px var(--accent2-color);
 }
 
 .dark {
