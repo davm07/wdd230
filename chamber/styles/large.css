@@ -65,8 +65,6 @@
         text-align: left;
     }
 
-    /* Discover Page */
-
     .discover-img img:hover {
         box-shadow: var(--container-shadow);
     }
