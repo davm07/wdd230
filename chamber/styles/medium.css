@@ -94,8 +94,9 @@
 
     /* Discover Page */
     .discover-main {
+        display: grid;
         grid-template-areas: none;
-        grid-template-columns: .2fr 1fr;
+        grid-template-columns: .3fr 1fr;
         margin: 0 auto;
     }
 

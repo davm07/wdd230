@@ -304,9 +304,10 @@ hr{
 
 /*-----Discover page HTML-----*/
 .discover-main {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    row-gap: 1rem;
+    row-gap: 1rem; */
+    display: block;
 }
 
 .bar {
@@ -333,8 +334,13 @@ hr{
     text-align: center;
 }
 
+.side-content:first-child img {
+    max-width: 260px;
+}
+
 .side-img img{
-    max-width: 290px;
+    width: 100%;
+    max-width: 200px;
 }
 
 .gallery {
