@@ -333,15 +333,16 @@ hr{
     margin-top: 0;
 }
 
-.side-img {
+.demographics-img, .attractions-img{
     text-align: center;
 }
 
-.side-content:first-child img {
+.demographics-img img {
+    width: 100%;
     max-width: 260px;
 }
 
-.side-img img{
+.attractions-img img{
     width: 100%;
     max-width: 200px;
 }
