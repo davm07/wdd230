@@ -99,7 +99,8 @@ input:checked + .slider:before {
     -ms-transform: translateX(12px);
     transform: translateX(12px);
 }
-/* Rounded sliders */
+
+
 .slider.round {
     border-radius: 34px;
 }
@@ -107,7 +108,7 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
-/* Navigation css */
+
 #menu-btn {
     top: 2.8rem;
     right: 1.5rem;
@@ -177,7 +178,6 @@ input:checked + .slider:before {
     text-align: right;
 }
 
-/* Hero css */
 main {
     margin: 1rem 0;
 }
@@ -237,7 +237,6 @@ main {
     background-color: var(--button-background-hover);
 }
 
-/* Cards css */
 .card {
     padding: .8rem;
     background-color: #54545403;
@@ -266,7 +265,6 @@ main {
     box-shadow: none;
 }
 
-/* Footer CSS */
 footer{
     color: var(--paragraph-color-on-color);
     border: 1px solid var(--secondary-color);

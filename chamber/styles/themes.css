@@ -9,10 +9,10 @@
     --heading-font: 'Bitter', serif;
     --paragraph-font: 'Poppins', sans-serif;
 
-    --headline-color-on-white: var(--accent1-color);  /* headlines on a white background */ 
-    --headline-color-on-color: var(--primary-color); /* headlines on a colored background */ 
-    --paragraph-color-on-white: var(--accent2-color); /* paragraph text on a white background */ 
-    --paragraph-color-on-color: var(--primary-color); /* paragraph text on a colored background */ 
+    --headline-color-on-white: var(--accent1-color); 
+    --headline-color-on-color: var(--primary-color); 
+    --paragraph-color-on-white: var(--accent2-color); 
+    --paragraph-color-on-color: var(--primary-color); 
     --paragraph-background-color: var(--secondary-color);
     --button-background-color: var(--accent2-color);
     --button-background-hover: var(--accent1-color);
