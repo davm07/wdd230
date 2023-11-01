@@ -1,0 +1,113 @@
+:root {
+    --border-style: 1.5px solid var(--primary-color);
+    --max-width: 20rem;
+    --font-size: 1rem;
+    --general-padding: .75rem;
+    --main-color: #394867;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------- MAIN --------------*/
+.active::after{
+    content: "";
+}
+
+/*----------- MAIN --------------*/
+main {
+    text-align: left;
+    display: block;
+    padding: 0 5%;
+    min-height: 20rem;
+    color: var(--main-color);
+}
+
+/*----------- FORM --------------*/
+form h2 {
+    margin: 1rem 0 1rem 0;
+}
+
+form p {
+    font-weight: bold;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border-radius: 10px;
+    border: var(--border-style);
+    padding: 1rem 2%;
+}
+
+form legend {
+    color: var(--main-color);
+}
+
+form label.top, form label.optional {
+    display: block;
+    font-size: var(--font-size);
+    padding-top: 1.1rem;
+}
+
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    padding: var(--general-padding);
+    border-radius: 5px;
+    border: var(--border-style);
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+form label.optional input {
+    display: block;
+    width: 100%;
+    max-width: var(--max-width);
+    padding: var(--general-padding);
+    accent-color: var(--main-color);
+}
+
+
+#rating {
+	margin-bottom: 0;
+}
+
+#ratingvalues {
+	display: flex;
+    margin-left: 4px;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+#ratingvalues option {
+	flex: 1 1 auto;
+    margin: 0 2px;
+    text-align: center;
+}
+
+form button#submitBtn {
+    border: none;
+    color: #F1F6F9;
+    background-color: var(--main-color);
+    width: 100%;
+    max-width: var(--max-width);
+    border-radius: 10px;
+    padding: .75rem 1.5rem;
+    margin: 0 0 1rem 2%;
+}
+
+form label.top input:required {
+    background-color: #fff0f3;
+}
+
+form label.top input:required:valid {
+    background-color: #f0fff0;
+}
+
+#pwConfirmation:valid {
+    background-color: #fff0f3;
+}
+
