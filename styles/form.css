@@ -88,7 +88,7 @@ form label.optional input {
     text-align: center;
 }
 
-form button#submitBtn {
+form button {
     border: none;
     color: #F1F6F9;
     background-color: var(--main-color);
