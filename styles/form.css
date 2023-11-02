@@ -70,7 +70,6 @@ form label.optional input {
     accent-color: var(--main-color);
 }
 
-
 #rating {
 	margin-bottom: 0;
 }
@@ -84,7 +83,7 @@ form label.optional input {
 
 #ratingvalues option {
 	flex: 1 1 auto;
-    margin: 0 2px;
+    margin: 4px 2px;
     text-align: center;
     font-size: 1.2rem;
 }
