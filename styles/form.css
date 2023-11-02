@@ -85,7 +85,7 @@ form label.optional input {
 	flex: 1 1 auto;
     margin: 4px 2px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: var(--font-size);
 }
 
 #ratingDisplay {
