@@ -1,5 +1,5 @@
 :root {
-    --border-style: 1.5px solid var(--primary-color);
+    --border-style: 1.8px solid var(--primary-color);
     --max-width: 20rem;
     --font-size: 1rem;
     --general-padding: .75rem;
@@ -86,6 +86,7 @@ form label.optional input {
 	flex: 1 1 auto;
     margin: 0 2px;
     text-align: center;
+    font-size: var(--font-size);
 }
 
 form button {
@@ -100,14 +101,23 @@ form button {
 }
 
 form label.top input:required {
-    background-color: #fff0f3;
+    border-bottom: 4px solid rgb(255, 82, 82);
 }
 
 form label.top input:required:valid {
-    background-color: #f0fff0;
+    border-bottom: 4px solid rgb(39, 135, 39);
 }
 
-#pwConfirmation:valid {
-    background-color: #fff0f3;
+.show {
+    display: block;
+    margin-top: .5rem;
 }
 
+.record {
+    height: 22rem;
+}
+
+.record p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}

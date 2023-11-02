@@ -1,21 +1,29 @@
-const kp1 = document.querySelector("#password");
-const kp2 = document.querySelector("#pwConfirmation");
+const ratingSlider = document.querySelector("#rating");
+const ratingDisplay = document.querySelector("#ratingDisplay");
+const password = document.querySelector("#password");
+const pwConfirmation = document.querySelector("#pwConfirmation");
 const message = document.querySelector("#pwMessage");
 
-kp2.addEventListener("focusout", checkSame);
+pwConfirmation.addEventListener("focusout", checkSame);
+ratingSlider.addEventListener("change", displayRatingValue);
+ratingSlider.addEventListener("input", displayRatingValue);
+
+
 
 // This should be refactored.
 function checkSame() {
-    if (kp1.value !== kp2.value) {
-        message.textContent = "❗Password DO NOT MATCH!";
-        message.style.display = "block";
-        message.style.marginTop = ".5rem";
-        kp2.style.backgroundColor = "#fff0f3";
-        kp2.value = "";
-        kp2.focus();
+    if (password.value !== pwConfirmation.value) {
+        message.textContent = "Password DOES NOT MATCH❗Please enter the correct Password";
+        message.classList.add("show")
+        pwConfirmation.value = "";
+        pwConfirmation.focus();
     } else {
-        message.style.display = "none";
-        kp2.style.backgroundColor = "#f0fff0";
-        kp2.style.color = "#000";
+        message.classList.remove("show");
+        message.innerHTML = "";
     }
+}
+
+
+function displayRatingValue() {
+    ratingDisplay.innerHTML = ratingSlider.value;
 }
