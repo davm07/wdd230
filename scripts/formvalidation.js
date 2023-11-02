@@ -15,8 +15,9 @@ function checkSame() {
     if (password.value !== pwConfirmation.value) {
         message.textContent = "Password DOES NOT MATCH❗Please enter the correct Password";
         message.classList.add("show")
+        password.value = "";
+        password.focus();
         pwConfirmation.value = "";
-        pwConfirmation.focus();
     } else {
         message.classList.remove("show");
         message.innerHTML = "";

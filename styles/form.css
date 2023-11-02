@@ -86,7 +86,12 @@ form label.optional input {
 	flex: 1 1 auto;
     margin: 0 2px;
     text-align: center;
-    font-size: var(--font-size);
+    font-size: 1.2rem;
+}
+
+#ratingDisplay {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 form button {
