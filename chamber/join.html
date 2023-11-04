@@ -60,7 +60,7 @@
                 <label for="fname" class="label-top">First Name*<input type="text" name="fname" id="fname" autofocus required></label>
                 <label for="lname" class="label-top">Last Name*<input type="text" name="lname" id="lname" required></label>
                 <label for="title-ps" class="label-top">Title or Position<input type="text" name="title-ps" id="title-ps" pattern="^[a-zA-Z\- ]{7,}$" placeholder="At least 7 characters. Only letters, hyphens and spaces." title="Please enter a valid title or position"></label>
-                <label for="email" class="label-top">Email*<input type="email" name="email" id="email" placeholder="someone@example.com"required></label>
+                <label for="email" class="label-top">Email*<input type="email" name="email" id="email" placeholder="someone@example.com" required></label>
                 <label for="phone" class="label-top">Mobile Phone Number*<input type="tel" name="phone" id="phone" required></label>
             </fieldset>
             <fieldset>
@@ -72,7 +72,7 @@
                 <label class="membership"><input type="radio" name="membership" value="silver-membership">Silver Membership</label>
                 <label class="membership"><input type="radio" name="membership" value="gold-membership">Gold Membership</label>
                 <label for="description" class="label-top">Describe your Business/Organization<textarea name="description" id="description" cols="30" rows="8"></textarea></label>
-                <label for="timestamp" class="visuallyhidden">TimeStamp: <input type="hidden" name="timestamp" id="timestamp"></label>
+                <label class="visuallyhidden">TimeStamp: <input type="hidden" name="timestamp" id="timestamp"></label>
             </fieldset>
             <button type="submit" id="submitBtn">Send My Application</button>
         </form>
