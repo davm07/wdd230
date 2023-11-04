@@ -66,10 +66,10 @@
                 <legend>Business Information</legend>
                 <label for="bs-name">Business/Organization's Name*<input type="text" name="bs-name" id="bs-name" required></label>
                 <div>Membership Level</div>
-                <label for="np"><input type="radio" name="membership">NP Membership (Non Profit Organization)</label>
-                <label for="bronze"><input type="radio" name="membership">Bronze Membership</label>
-                <label for="silver"><input type="radio" name="membership">Silver Membership</label>
-                <label for="gold"><input type="radio" name="membership">Gold Membership</label>
+                <label class="membership"><input type="radio" name="membership" value="non-profit">NP Membership (Non Profit Organization)</label>
+                <label class="membership"><input type="radio" name="membership" value="bronze-membership">Bronze Membership</label>
+                <label class="membership"><input type="radio" name="membership" value="silver-membership">Silver Membership</label>
+                <label class="membership"><input type="radio" name="membership" value="gold-membership">Gold Membership</label>
                 <label for="description">Describe your Business/Organization<textarea name="description" id="description"></textarea></label>
                 <label for="timestamp"><input type="hidden" name="timestamp" id="timestamp"></label>
             </fieldset>
@@ -79,40 +79,44 @@
             <h2>Membership Level Benefits</h2>
             <div>
                 <h3>NP Membership (Non Profit Organization)</h3>
+                <p>Annual membership price: This level of membership is not priced as it corresponds to a non-profit organization.</p>
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>Access to networking events.</li>
+                    <li>Inclusion in online directories of the Chamber of Commerce.</li>
                 </ul>
             </div>
             <div>
                 <h3>Bronze Membership</h3>
+                <p>Annual membership price: &dollar;400</p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Benefits of previous membership.</li>
+                    <li>Low prices to participate in seminars and trainings for entrepreneurs.</li>
+                    <li>Access to chamber news and business updates in the area.</li>
+                    <li>Recommendations from the chamber's team to improve the business or company once a month.</li>
                 </ul>
             </div>
             <div>
                 <h3>Silver Membership</h3>
+                <p>Annual membership price: &dollar;750</p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Benefits of previous membership.</li>
+                    <li>Free access to events with national and international businessmen.</li>
+                    <li>Free participation in marketing and business development seminars and trainings, etc.</li>
+                    <li>Free advertising on the Chamber of Commerce website, once a month.</li>
+                    <li>10% discount for the following year's membership.</li>
                 </ul>
             </div>
             <div>
                 <h3>Gold Membership</h3>
+                <p>Annual membership price: &dollar;1200</p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Benefits of previous membership.</li>
+                    <li>15% discount for the following year's membership.</li>
+                    <li>VIP access to meetings and seminars with local and international businessmen, as well as government representatives.</li>
+                    <li>Free and prominent advertising on the Chamber of Commerce's website, every month.</li>
+                    <li>Personalized advice from the Chamber of Commerce team in weekly meetings with other Gold members.</li>
+                    <li>Exclusive participation in national events with entrepreneurs from other regions.</li>
+                    <li>Direct participation in decisions to improve the Chamber of Commerce in the local area and to implement plans to support smaller businesses.</li>
                 </ul>
             </div>
         </div>
@@ -143,5 +147,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/timestamp.js"></script>
 </body>
 </html>
