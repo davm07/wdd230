@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Vasquez">
+    <meta 
+        name="description" 
+        content="The Join Page of the Lommel City Chamber of Commerce, with the purpose to serve as a bridge for Local Businesses and the members of the Chamber, developed by Diego Vasquez for WDD230 course">
+    <!--Social Media Meta Tags-->     
+    <meta property="og:site_name" content="Lommel City Chamber of Commerce">
+    <meta property="og:title" content="Lommel City Chamber of Commerce 2023">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="The Join Page of the Lommel City Chamber of Commerce is
+                                            developed to serve as a bridge to give the local businesses in Lommel, Belgium an opportunity to be part of the Chamber of Commerce by helping them to register their business in the Chamber - Developed by Diego Vasquez for WDD230 course">
+    <meta property="og:image" content="https://davm07.github.io/wdd230/chamber/images/lommel.png">
+    <meta property="og:url" content="https://davm07.github.io/wdd230/chamber/">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Join to the Lommel Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="container title">
+            <img src="images/lommel-logo.webp" alt="Lommel Chamber of Commerce logo" width="100" height="100">
+            <h1>Lommel <span>Chamber of Commerce</span></h1>
+        </div>
+        <div class="switch-container">
+            <label class="switch" content="Dark Mode Switch" for="dark-mode">
+                <input type="checkbox" id="dark-mode" aria-label="Switch to dark mode">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <nav class="header-nav">
+            <button id="menu-btn" name="boton-menu" aria-label="Show menu button"></button>
+            <ul class="navigation">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+                <li><a href="#">DIRECTORY</a></li>
+                <li><a href="join.html">JOIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Become a Member of the Chamber</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
+                <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
+                <label for="title-ps">Title or Position<input type="text" name="title-ps" id="title-ps" pattern="^[a-zA-Z\- ]{7,}$"></label>
+                <label for="email">Email*<input type="email" name="email" id="email" placeholder="someone@example.com"required></label>
+                <label for="phone">Mobile Phone Number*<input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label for="bs-name">Business/Organization's Name*<input type="text" name="bs-name" id="bs-name" required></label>
+                <div>Membership Level</div>
+                <label for="np"><input type="radio" name="membership">NP Membership (Non Profit Organization)</label>
+                <label for="bronze"><input type="radio" name="membership">Bronze Membership</label>
+                <label for="silver"><input type="radio" name="membership">Silver Membership</label>
+                <label for="gold"><input type="radio" name="membership">Gold Membership</label>
+                <label for="description">Describe your Business/Organization<textarea name="description" id="description"></textarea></label>
+                <label for="timestamp"><input type="hidden" name="timestamp" id="timestamp"></label>
+            </fieldset>
+            <button type="submit">Send My Application</button>
+        </form>
+        <div>
+            <h2>Membership Level Benefits</h2>
+            <div>
+                <h3>NP Membership (Non Profit Organization)</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container final">
+            <div class="title-footer">
+                <img src="images/lommel-logo.webp" alt="Lommel Chamber of Commerce logo" width="100" height="100">
+                <h4 class="title-wrapper">Lommel <span>Chamber of Commerce</span></h4>
+            </div>
+            <div class="contact-info">
+                <p>info&commat;lommelchamber.org</p>
+                <p>+(32) 0493 46 38 56 </p>
+                <p>📍Location Map</p>
+            </div>
+        </div>
+        <hr>
+        <div class="my-info">
+            <p>&copy; <span id="current-year"></span>
+                Lommel Chamber<br>
+                Diego Vasquez Mejia<br>
+                WDD230 Project
+            </p>
+            <p>Last Modification: <span id="last-modification"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsivemenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+</html>
