@@ -102,4 +102,30 @@
     .discover-img {
         margin-top: 2.5rem;
     }
+
+    /*-------------FORM-------------*/
+    .join-main {
+        grid-template-areas: 
+        'title title title'
+        'form form benefits'
+    }
+
+    .join-main h1 {
+        grid-area: title;
+    }
+
+    .join-main form {
+        max-width: 600px;
+        grid-area: form;
+        height: min-content;
+    }
+
+    .membership-level {
+        grid-area: benefits;
+    }
+
+    /*-------------THANKS PAGE-------------*/
+    .thx {
+        display: block;
+    }
 }

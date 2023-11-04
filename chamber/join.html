@@ -51,35 +51,37 @@
         </nav>
     </header>
 
-    <main>
+    <main class="join-main">
         <h1>Become a Member of the Chamber</h1>
         <form method="get" action="thankyou.html">
             <fieldset>
-                <legend>Applicant Information</legend>
-                <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
-                <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
-                <label for="title-ps">Title or Position<input type="text" name="title-ps" id="title-ps" pattern="^[a-zA-Z\- ]{7,}$"></label>
-                <label for="email">Email*<input type="email" name="email" id="email" placeholder="someone@example.com"required></label>
-                <label for="phone">Mobile Phone Number*<input type="tel" name="phone" id="phone" required></label>
+                <legend>Applicant Information</legend> 
+                <p>*️ indicates a required field</p>
+                <label for="fname" class="label-top">First Name*<input type="text" name="fname" id="fname" autofocus required></label>
+                <label for="lname" class="label-top">Last Name*<input type="text" name="lname" id="lname" required></label>
+                <label for="title-ps" class="label-top">Title or Position<input type="text" name="title-ps" id="title-ps" pattern="^[a-zA-Z\- ]{7,}$" placeholder="At least 7 characters. Only letters, hyphens and spaces." title="Please enter a valid title or position"></label>
+                <label for="email" class="label-top">Email*<input type="email" name="email" id="email" placeholder="someone@example.com"required></label>
+                <label for="phone" class="label-top">Mobile Phone Number*<input type="tel" name="phone" id="phone" required></label>
             </fieldset>
             <fieldset>
                 <legend>Business Information</legend>
-                <label for="bs-name">Business/Organization's Name*<input type="text" name="bs-name" id="bs-name" required></label>
+                <label for="bs-name" class="label-top">Business/Organization's Name*<input type="text" name="bs-name" id="bs-name" required></label>
                 <div>Membership Level</div>
                 <label class="membership"><input type="radio" name="membership" value="non-profit">NP Membership (Non Profit Organization)</label>
                 <label class="membership"><input type="radio" name="membership" value="bronze-membership">Bronze Membership</label>
                 <label class="membership"><input type="radio" name="membership" value="silver-membership">Silver Membership</label>
                 <label class="membership"><input type="radio" name="membership" value="gold-membership">Gold Membership</label>
-                <label for="description">Describe your Business/Organization<textarea name="description" id="description"></textarea></label>
+                <label for="description" class="label-top">Describe your Business/Organization<textarea name="description" id="description" cols="30" rows="8"></textarea></label>
                 <label for="timestamp" class="visuallyhidden">TimeStamp: <input type="hidden" name="timestamp" id="timestamp"></label>
             </fieldset>
-            <button type="submit">Send My Application</button>
+            <button type="submit" id="submitBtn">Send My Application</button>
         </form>
-        <div>
+        <div class="membership-level">
             <h2>Membership Level Benefits</h2>
             <div>
                 <h3>NP Membership (Non Profit Organization)</h3>
                 <p>Annual membership price: This level of membership is not priced as it corresponds to a non-profit organization.</p>
+                <p>Benefits of this Membership:</p>
                 <ul>
                     <li>Access to networking events.</li>
                     <li>Inclusion in online directories of the Chamber of Commerce.</li>
@@ -88,6 +90,7 @@
             <div>
                 <h3>Bronze Membership</h3>
                 <p>Annual membership price: &dollar;400</p>
+                <p>Benefits of this Membership:</p>
                 <ul>
                     <li>Benefits of previous membership.</li>
                     <li>Low prices to participate in seminars and trainings for entrepreneurs.</li>
@@ -98,6 +101,7 @@
             <div>
                 <h3>Silver Membership</h3>
                 <p>Annual membership price: &dollar;750</p>
+                <p>Benefits of this Membership:</p>
                 <ul>
                     <li>Benefits of previous membership.</li>
                     <li>Free access to events with national and international businessmen.</li>
@@ -109,6 +113,7 @@
             <div>
                 <h3>Gold Membership</h3>
                 <p>Annual membership price: &dollar;1200</p>
+                <p>Benefits of this Membership:</p>
                 <ul>
                     <li>Benefits of previous membership.</li>
                     <li>15% discount for the following year's membership.</li>

@@ -68,5 +68,8 @@
     .discover-img img:hover {
         box-shadow: var(--container-shadow);
     }
+
+    /*--------FORM---------*/
+    
     
 }

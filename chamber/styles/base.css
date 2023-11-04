@@ -367,6 +367,109 @@ hr{
 }
 
 /*---------FORM---------*/
+
+.join-main h1, .membership-level h2, .membership-level h3 {
+    font-family: var(--heading-font);
+}
+
+form {
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color-on-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+form fieldset legend {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+form fieldset p {
+    margin: .5rem 0;
+}
+
+::placeholder {
+    color: var(--paragraph-color-on-color);
+    opacity: .8;
+}
+
+form label.label-top, form fieldset div {
+    display: block;
+    padding-top: 1.3rem;
+    font-size: .9rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+form label.label-top input, form label.label-top textarea {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1rem;
+    padding: .8rem;
+    width: 100%;
+    margin-top: .15rem;
+    background-color: rgba(255, 255, 255, 0.389);
+    border: none;
+    border-radius: 8px;
+    color: var(--paragraph-color-on-color);
+    max-width: 30rem;
+}
+
+form label.membership {
+    display: block;
+    padding: .78rem;
+    font-size: 1rem;
+}
+
+form label.label-top textarea {
+    resize: none;
+}
+
+#submitBtn {
+    padding: .8rem;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    background-color: var(--paragraph-color-on-color);
+    font-size: 1rem;
+}
+
+#title-ps:focus {
+    border-right: 4px solid red;
+}
+
+#title-ps:focus:valid {
+    border-right: 4px solid green;
+}
+
+.membership-level {
+    padding: 1rem;
+}
+
+.membership-level h2, .membership-level h3 {
+    color: var(--headline-color-on-white);
+}
+
+.membership-level h2 {
+    margin-top: 0;
+}
+
+.membership-level p, .membership-level ul {
+    font-size: .9rem;
+}
+
+.membership-level h3+p {
+    font-weight: bold;
+}
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -376,4 +479,13 @@ hr{
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+/*---------THANKS PAGE---------*/
+.thx {
+    height: 22rem;
+}
+
+.thx p {
+    font-size: 1.1rem;
 }
