@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+body {
+    font-family: 'Lobster Two', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #252B48;
+}
+
+main {
+    background-color: #eadbc866;
+    padding: .25rem;
+    box-shadow: 0 0 30px #777;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    padding: .5rem;
+    margin: .25rem;
+    border: 1px solid #252B48;
+    background-color: #ced2e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #252B48;
+}
+
+section img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #252B48;
+    height: 220px;
+    border: 1px solid #252B48;
+}
+
+footer {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #252B48;
+}

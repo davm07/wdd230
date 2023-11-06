@@ -1,0 +1,28 @@
+{
+    "familyName": "Taylor",
+    "movedInDate": "11/06/2023",
+    "numberOfPeople": 4,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "Christian Taylor",
+            "gender": "male",
+            "birthdate": "09/19/1970"
+        },
+        {
+            "name": "Emily Taylor",
+            "gender": "female",
+            "birthdate": "02/23/1967"
+        },
+        {
+            "name": "Mindy Taylor",
+            "gender": "female",
+            "birthdate": "07/22/1992"
+        },
+        {
+            "name": "Jordan Taylor",
+            "gender": "male",
+            "birthdate": "10/11/1999"
+        }
+    ]
+}
