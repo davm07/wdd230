@@ -124,6 +124,10 @@
         grid-area: benefits;
     }
 
+    .discover-img img:hover {
+        box-shadow: var(--container-shadow);
+    }
+
     /*-------------THANKS PAGE-------------*/
     .thx {
         display: block;

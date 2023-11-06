@@ -64,8 +64,4 @@
         align-items: center;
         text-align: left;
     }
-
-    .discover-img img:hover {
-        box-shadow: var(--container-shadow);
-    }
 }

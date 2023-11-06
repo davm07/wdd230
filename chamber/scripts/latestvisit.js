@@ -11,6 +11,8 @@ if (!lastVisit) {
     window.localStorage.setItem('lastVisit', currentDate.toISOString());
 } else if (diff < 1) {
     latestVisit.innerHTML = "Back so soon! Awesome! 🫡";
+} else if (diff >= 1 && diff < 2) {
+    latestVisit.innerHTML= `You last visited ${diff.toFixed(0)} day ago`;
 } else {
     latestVisit.innerHTML = `You last visited ${diff.toFixed(0)} days ago`;
 }
