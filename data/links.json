@@ -1,0 +1,137 @@
+{
+    "lessons": [
+        {
+            "lesson":"01",
+            "links": [
+                {
+                    "url":"lesson01/holygrail.html",
+                    "title":"Holy Layout"
+                },
+                {
+                    "url":"lesson01/media-query.html",
+                    "title":"Media Query Example"
+                }
+            ]
+        },
+        {
+            "lesson":"02",
+            "links": [
+                {
+                    "url":"lesson02/design.html",
+                    "title":"Web Design Principles"
+                },
+                {
+                    "url":"lesson02/design-principles.html",
+                    "title":"Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson":"03",
+            "links": [
+                {
+                    "url":"lesson03/images/combinators-ex.png",
+                    "title":"Combinators"
+                },
+                {
+                    "url":"https://codepen.io/davm07/pen/OJrvmJm",
+                    "title":"Pseudo-Elements"
+                },
+                {
+                    "url":"https://codepen.io/davm07/pen/XWoERyJ",
+                    "title":"Responsive Menu"
+                },
+                {
+                    "url":"lesson03/chamber-site-plan.html",
+                    "title":"Chamber Site Plan"
+                }
+            ]
+        },
+        {
+            "lesson":"04",
+            "links": [
+                {
+                    "url":"https://codepen.io/davm07/pen/mdaGrEX",
+                    "title":"Pseudo-Classes"
+                }
+            ]
+        },
+        {
+            "lesson":"05",
+            "links": [
+                {
+                    "url":"lesson05/bom.html",
+                    "title":"BOM Application"
+                }
+            ]
+        },
+        {
+            "lesson":"06",
+            "links": [
+                {
+                    "url":"lesson06/images/landscape.webp",
+                    "title":"WebP"
+                },
+                {
+                    "url":"lesson06/responsive-images.html",
+                    "title":"Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson":"07",
+            "links": [
+                {
+                    "url":"lesson03/lazyload.html",
+                    "title":"Lazy Loading"
+                },
+                {
+                    "url":"lesson07/bom.html",
+                    "title":"BOM Enhanced Application"
+                }
+            ]
+        },{
+            "lesson":"08",
+            "links": [
+                {
+                    "url":"lesson08/tablebuild.html",
+                    "title":"Table Build Activity"
+                },
+                {
+                    "url":"lesson08/form-start/index.html",
+                    "title": "Form Example"
+                },
+                {
+                    "url":"/form.html",
+                    "title": "Form Activity"
+                }
+            ]
+        },
+        {
+            "lesson":"09",
+            "links": [
+                {
+                    "url":"lesson05/new-ward-members.json",
+                    "title":"Ward Members JSON"
+                },
+                {
+                    "url":"lesson05/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url":"#",
+                    "title": "Working..."
+                },
+                {
+                    "url":"#",
+                    "title": "Working..."
+                }
+            ]
+        }
+    ]
+}
