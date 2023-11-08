@@ -210,10 +210,6 @@ main {
 	font-size: 2rem;
 }
 
-.herolabel.large, .herolabel.medium {
-    display: none;
-}
-
 .btn {
     position: absolute;
     top: 50%;

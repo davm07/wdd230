@@ -39,15 +39,6 @@
         grid-area: hero;
     }
 
-    .herolabel.small{
-        display: none;
-    }
-
-    .herolabel.medium{
-        display: block;
-    }
-
-
     .card1{
         grid-area: card1;
     }
