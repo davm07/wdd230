@@ -111,11 +111,11 @@
             "lesson":"09",
             "links": [
                 {
-                    "url":"lesson05/new-ward-members.json",
+                    "url":"lesson09/new-ward-members.json",
                     "title":"Ward Members JSON"
                 },
                 {
-                    "url":"lesson05/prophets.html",
+                    "url":"lesson09/prophets.html",
                     "title": "Prophets"
                 }
             ]
