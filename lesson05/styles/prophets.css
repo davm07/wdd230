@@ -3,9 +3,6 @@
 body {
     font-family: 'Lobster Two', sans-serif;
     text-align: center;
-}
-
-h1 {
     color: #252B48;
 }
 
@@ -31,14 +28,18 @@ section {
 }
 
 section h2 {
-    margin-top: 0;
+    margin: 0 auto;
     color: #252B48;
+}
+
+section p {
+    margin: 8px auto;
 }
 
 section img {
     width: auto;
     max-width: 325px;
-    box-shadow: 0 0 30px #252B48;
+    box-shadow: 0 0 20px #252B48;
     height: 220px;
     border: 1px solid #252B48;
 }
