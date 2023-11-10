@@ -63,20 +63,19 @@
         grid-area: title;
     }
 
-    .member1, .member2, .member3 {
-        margin: 0;
-    }
-
     .member1{
         grid-area: member1;
+        margin: 0;
     }
 
     .member2{
         grid-area: member2;
+        margin: 0;
     }
 
     .member3{
         grid-area: member3;
+        margin: 0;
     }
 
     footer {
