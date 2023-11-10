@@ -56,4 +56,19 @@
         align-items: center;
         text-align: left;
     }
+
+    .list section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 0;
+        align-items: center;
+    }
+
+    .list section h2 {
+        margin-top: .5rem;
+    }
+
+    .list section * {
+        margin: .5rem 1.5rem;
+    }
 }
