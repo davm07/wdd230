@@ -18,6 +18,7 @@
     --button-background-hover: var(--accent1-color);
     --button-paragraph-color: var(--primary-color);
     --button-paragraph-hover: var(--primary-color);
+    --card-background-color: var(--primary-color);
 
     --container-shadow: 0px 0px 15px 0px var(--accent2-color);
 }
@@ -34,4 +35,5 @@
     --button-background-color: var(--accent1-color);
     --button-background-hover: #AA1464;
     --button-paragraph-hover: #FFFFFF;
+    --card-background-color: var(--secondary-color);
 }

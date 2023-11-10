@@ -17,6 +17,7 @@ const displayDirectoryInfo = (members) => {
         const address = document.createElement("h3");
         const phoneNumber = document.createElement("p");
         const websiteURL = document.createElement("a");
+        const logoContainer = document.createElement("div")
         const memberLogo = document.createElement("object");
 
         memberName.textContent = `${member.name}`;
@@ -24,13 +25,14 @@ const displayDirectoryInfo = (members) => {
         phoneNumber.textContent = `${member.phoneNumber}`;
     
         websiteURL.setAttribute("href", member.websiteURL);
-        websiteURL.textContent = `${member.name}`;
+        websiteURL.textContent = `${member.websiteURL}`;
 
         memberLogo.setAttribute("data", member.imageFileName);
-        // memberLogo.setAttribute("width", "150")
-        // memberLogo.setAttribute("height", "75")
+        logoContainer.setAttribute("class", "logo-card");
+        logoContainer.appendChild(memberLogo);
 
-        card.append(memberName, address, phoneNumber, websiteURL, memberLogo);
+        card.setAttribute("class", "card");
+        card.append(logoContainer, address, phoneNumber, websiteURL);
 
         cards.appendChild(card);
     });
