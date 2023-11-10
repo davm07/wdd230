@@ -1,0 +1,85 @@
+{
+    "members": [
+        {
+            "name": "Action België",
+            "address": "Buitensingel, 3920 Lommel",
+            "phoneNumber": "+32 03 808 43 53",
+            "websiteURL": "https://www.action.com/nl-be/winkels/?utm_campaign=localbusiness&utm_source=google&utm_medium=organic&utm_content=2078",
+            "imageFileName": "images/action.svg",
+            "membershipLevel": "Gold",
+            "otherInformation": "Action was founded by Gerard Deen and Rob Wagemaker, who were later joined by Boris Deen. They opened their first store in 1993 in Enkhuizen and started expanding by founding new stores that same year. In 2002, they had 94 stores; in 2005, the first store was opened in Belgium."
+        },
+        {
+            "name": "Brico",
+            "address": "Buitensingel 60/8, 3920 Lommel",
+            "phoneNumber": "+32 011 55 44 14",
+            "websiteURL": "https://www.brico.be/fr/storedetail/3503/lommel?utm_campaign=gmb&utm_medium=organic&utm_source=local",
+            "imageFileName": "images/brico.svg",
+            "membershipLevel": "Gold",
+            "otherInformation": "Brico is a Belgian hardware store chain. The chain focuses mainly on DIY items but also sells garden-related articles. The chain has 140 locations (as of February 2016) spread over Belgium, about 95 of which are franchised."
+        },
+        {
+            "name": "Decathlon",
+            "address": "Buitensingel 13, 3920 Lommel",
+            "phoneNumber": "+32 011 49 47 50",
+            "websiteURL": "https://www.decathlon.be/nl",
+            "imageFileName": "images/decathlon.svg",
+            "membershipLevel": "Silver",
+            "otherInformation": "Decathlon is a French sporting goods retailer. With over 2,080 stores in 56 countries and regions (2023), it is the largest sporting goods retailer in the world."
+        },
+        {
+            "name": "Exterioo Tuinmeubelen",
+            "address": "Binnensingel 90, 3920 Lommel",
+            "phoneNumber": "+32 011 36 10 37",
+            "websiteURL": "https://www.exterioo.be/nl/showrooms/tuinmeubelen-lommel",
+            "imageFileName": "images/exterioo.svg",
+            "membershipLevel": "Bronze",
+            "otherInformation": "In the Exterioo showroom at Binnensingel 90 you will find everything to turn your garden or terrace into a place full of dreams and memories. Discover the collections of our brands Vinci, Bristol Essentials and Bristol À La Carte, test the quality and choose from materials such as aluminum, teak and wicker - and from more than 50 fabrics. And if you need help with designing your garden, our advisors are ready to provide you with tips and advice."
+        },
+        {
+            "name": "IPL Plastics Lommel",
+            "address": "Gerard Mercatorstraat 15, 3920 Lommel",
+            "phoneNumber": "+32 011 55 30 29",
+            "websiteURL": "https://www.iplglobal.com/our-divisions/our-brands/ipl-loomans",
+            "imageFileName": "images/ipl.sv",
+            "membershipLevel": "Silver",
+            "otherInformation": "With 50 years of experience and growth, serving customers in the food, beverage and personal care sectors, IPL Lommel is your partner in customized, sustainable packaging at scale."
+        },
+        {
+            "name": "Krëfel",
+            "address": "Binnensingel 46, 3920 Lommel",
+            "phoneNumber": "+32 011 73 46 81",
+            "websiteURL": "https://www.krefel.be/nl/winkels/lommel",
+            "imageFileName": "images/krefel.svg",
+            "membershipLevel": "Gold",
+            "otherInformation": "Krëfel is an originally Belgian retail chain that has been in French hands since 2019 and specializes in consumer electronics. The chain has 75 stores, an online store and more than 1,500 employees. All stores are located in Belgium. The head office and distribution center (more than 45,000 m²) are located in Humbeek (sub-municipality of Grimbergen)."
+        },
+        {
+            "name": "Kristalpark III",
+            "address": "Gerard Mercatorstraat 2, 3920 Lommel",
+            "phoneNumber": "+32 011 24 68 23",
+            "websiteURL": "https://kristalpark3.be/",
+            "imageFileName": "images/kristalpark.svg",
+            "membershipLevel": "Bronze",
+            "otherInformation": "Kristalpark III is located in an industrial zone totaling almost 900 hectares in Lommel, North Limburg, in the heart of the Euregio. This location is a strategic added value for established companies thanks to the accessibility of the province in general and of the industrial estate in particular via motorways, railways and waterways ."
+        },
+        {
+            "name": "Start People",
+            "address": "Hertog Jan Plein 26, 3920 Lommel",
+            "phoneNumber": "+32 011 66 82 40",
+            "websiteURL": "https://www.startpeople.be/nl/kantoren/kantoor/start-people-lommel",
+            "imageFileName": "images/startpeople.svg",
+            "membershipLevel": "Silver",
+            "otherInformation": "Start People focuses on activities including temporary employment, secondment, recruitment & selection and payrolling, as well as specific markets including transport, logistics, technical, hotel & catering, (medical) care, call centers, office, education and governmentals."
+        },
+        {
+            "name": "TRIXXO Jobs",
+            "address": "Dorp 22, 3920 Lommel",
+            "phoneNumber": "+32 011 67 20 97",
+            "websiteURL": "https://www.trixxo.be/nl/kantoren/trixxo-jobs-lommel/",
+            "imageFileName": "images/trixxo.svg",
+            "membershipLevel": "Bronze",
+            "otherInformation": "The TRIXXO Group is an extremely fast-growing company specialized in domestic help and temporary employment with a permanent option. From domestic helper to welder to engineer. Whatever you are looking for, we make that professional dream come true. Everyone is helped at TRIXXO."
+        }
+    ]
+}
