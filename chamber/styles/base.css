@@ -100,7 +100,6 @@ input:checked + .slider:before {
     transform: translateX(12px);
 }
 
-
 .slider.round {
     border-radius: 34px;
 }
@@ -485,3 +484,5 @@ form label.label-top textarea {
 .thx p {
     font-size: 1.1rem;
 }
+
+/*---------DIRECTORY PAGE---------*/
