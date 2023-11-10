@@ -537,7 +537,6 @@ form label.label-top textarea {
     padding: 1rem;
     border-radius: 10px;
     border: 1px solid var(--accent2-color);
-    background-color: none;
 }
 
 .directory-btn button svg {
