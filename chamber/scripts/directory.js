@@ -1,11 +1,12 @@
 const infoURL = "https://davm07.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector("#cards");
+const cards = document.querySelector(".cards");
+const btnGrid = document.querySelector("#grid-cards");
+const btnList = document.querySelector("#list-cards");
 
 async function getDirectory(url) {
     const response = await fetch(url);
     if (response.ok) {
         const data = await response.json();
-        console.log(data.members);
         displayDirectoryInfo(data.members);
     }
 }
@@ -32,10 +33,29 @@ const displayDirectoryInfo = (members) => {
         logoContainer.appendChild(memberLogo);
 
         card.setAttribute("class", "card");
-        card.append(logoContainer, address, phoneNumber, websiteURL);
+        card.append(logoContainer, memberName, address, phoneNumber, websiteURL);
 
         cards.appendChild(card);
     });
 }
+
+btnGrid.addEventListener("click", () => {
+    cards.classList.add("cards");
+    cards.classList.remove("list");
+    const gridCards = document.querySelectorAll(".cards > section");
+    gridCards.forEach((gridCard) => {
+        gridCard.classList.add("card");
+    });
+});
+
+btnList.addEventListener("click", () => {
+    cards.classList.add("list");
+    cards.classList.remove("cards");
+    const gridCards = document.querySelectorAll(".card");
+    gridCards.forEach(gridCard => {
+        gridCard.classList.remove("card");
+    });
+});
+
 
 getDirectory(infoURL);
