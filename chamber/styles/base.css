@@ -62,7 +62,6 @@ header {
     color: var(--paragraph-color-on-color);
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
-    margin-bottom: .8rem;
     background-color: var(--secondary-color);
     padding: 1rem;
 }
