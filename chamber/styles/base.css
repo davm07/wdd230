@@ -19,7 +19,7 @@
     --button-paragraph-color: var(--primary-color);
     --button-paragraph-hover: var(--primary-color);
     --card-background-color: var(--primary-color);
-    --section-background-color: var(--secondary-color);
+    --section-background-color: #ffe1f049;
 
     --container-shadow: 0px 0px 15px 0px var(--accent2-color);
 }
@@ -36,7 +36,7 @@
     --button-background-hover: #AA1464;
     --button-paragraph-hover: #FFFFFF;
     --card-background-color: var(--secondary-color);
-    --section-background-color: var(--secondary-color);
+    --section-background-color: #55555538;
 }
 
 body {
@@ -548,12 +548,7 @@ form label.label-top textarea {
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     column-gap: 1rem;
     row-gap: 1.8rem;
-    margin: 2.5rem 0;
-}
-
-.cards .card {
-    margin-top: 0;
-    box-shadow: 0px 12px 29px -14px var(--accent2-color);
+    margin: 1.5rem 0;
 }
 
 .cards .card h2 {
@@ -596,14 +591,9 @@ form label.label-top textarea {
 }
 
 .list section object {
-	display: none; /* smaller viewports only */
+	display: none;
 }
 
-.list section:nth-child(even) {
+.list section:nth-child(odd) {
 	background-color: var(--section-background-color);
-    color: white;
-}
-
-.list section:nth-child(even) a {
-    color: white;
 }
