@@ -223,7 +223,7 @@ input:checked + .slider:before {
 }
 
 main {
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .hero {
@@ -305,7 +305,6 @@ main {
 }
 
 footer{
-    margin-top: 1rem;
     color: var(--paragraph-color-on-color);
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
@@ -356,12 +355,9 @@ hr{
 }
 
 #latest-visit {
+    font-family: var(--heading-font);
     font-weight: bolder;
     font-size: 1.2rem;
-}
-
-.side-content h2 {
-    font-size: 1rem;
 }
 
 .side-content h2, .gallery h2 {
