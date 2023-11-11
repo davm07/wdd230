@@ -78,10 +78,6 @@
         margin: 0;
     }
 
-    footer {
-        margin-top: 1rem;
-    }
-
     .discover-main {
         display: grid;
         grid-template-areas: none;

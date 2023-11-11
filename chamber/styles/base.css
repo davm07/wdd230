@@ -305,6 +305,7 @@ main {
 }
 
 footer{
+    margin-top: 1rem;
     color: var(--paragraph-color-on-color);
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
