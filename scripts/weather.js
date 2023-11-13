@@ -27,13 +27,15 @@ function capitalizeString(string) {
 }
 
 function displayResults(data) {
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let temp = data.main.temp;
     let desc = data.weather[0].description;
     let capDesc = capitalizeString(desc);
     currentTemp.innerHTML = `${temp.toFixed(0)}&deg;F - ${capDesc}`;
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", data.weather[0].main);
+    weatherIcon.setAttribute("width", "50");
+    weatherIcon.setAttribute("height", "50");
 }
 
 apiFetch();
