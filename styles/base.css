@@ -187,6 +187,14 @@ main h2 {
     padding: .6rem 0;
 }
 
+#temp-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+}
+
 .map {
     grid-column: 1/2;
     width: 100%;
