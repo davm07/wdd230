@@ -227,7 +227,6 @@ main {
 
 .hero {
     position: relative;
-    /* z-index: -1; */
 }
 
 .hero img{
@@ -235,32 +234,11 @@ main {
     height: auto;
 }
 
-.herolabel {
-	position: absolute;
-	top: 15px;
-	left: 15px;
-    color: var(--paragraph-color-on-color);
-	padding: 1rem;
-    background-color: rgb(33, 42, 62, 0.60);
-    box-shadow: 0px 0px 10px -1px rgba(255,255,255,1);
-}
-
-.herolabel p {
-    font-weight: bold;
-    font-family: var(--heading-font);
-    text-align: left;
-	margin: 0;
-	font-size: 2rem;
-}
-
-.btn {
+.btn-cta{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.btn-cta{
     border: none;
     font-family: var(--heading-font);
     border-radius: 6px;
@@ -301,6 +279,18 @@ main {
     border: none;
     background-color: transparent;
     box-shadow: none;
+}
+
+#weather-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+#weather-icon {
+    filter: brightness(0.9);
 }
 
 footer{
