@@ -246,6 +246,7 @@ main {
     color: var(--button-paragraph-color);
     background-color: var(--button-background-color);
     box-shadow: 3px 3px 30px 6px rgba(0,0,0,0.90);
+    text-decoration: none;
 }
 
 .btn-cta:hover {
