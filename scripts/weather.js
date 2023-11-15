@@ -27,7 +27,7 @@ function capitalizeString(string) {
 }
 
 function displayResults(data) {
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     let temp = data.main.temp;
     let desc = data.weather[0].description;
     let capDesc = capitalizeString(desc);
