@@ -2,7 +2,7 @@ const banner = document.querySelector("#banner");
 const button = document.querySelector("#close-banner");
 
 const newDate = new Date();
-const today = newDate.toLocaleString("en-us", { weekday: "long" }).toLowerCase();
+const today = "monday"//newDate.toLocaleString("en-us", { weekday: "long" }).toLowerCase();
 
 if (today === "monday" || today === "tuesday" || today === "wednesday") {
     banner.classList.add("banner-show")
