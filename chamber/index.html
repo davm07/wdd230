@@ -53,6 +53,14 @@
         </nav>
     </header>
 
+    <div id="banner">
+        <p> 
+            <button name="close-banner" id="close-banner">❌</button>
+            Join us for an evening of networking and learning at the Chamber of Commerce Meet and Greet! 
+            <br><b>Wednesday 7:00 pm at Lommel's chamber of commerce office.</b>
+        </p>
+    </div>
+
     <main>
         <div class="hero">
             <picture>
@@ -71,14 +79,17 @@
         <section class="card card2">
             <h2>Lommel Weather</h2>
             <div id="weather-container">
-                <img id="weather-icon" src="#" alt="#empty">
+                <img class="weather-icon" src="#" alt="#empty">
                 <div id="temp-container">
                     <p>Temperature: <span id="temperature"></span>&deg;F</p>
                     <p id="weather-info"></p>
                 </div> 
             </div>
-            <p>Wind speed: <span id="wind-speed">8</span> mph</p>
+            <p>Wind speed: <span id="wind-speed"></span> mph</p>
             <p>Wind Chill: <span id="windchill"></span></p>
+            <h2>Forecast</h2>
+            <div class="forecast-inf">
+            </div>
         </section>
 
         <section class="card splt">
@@ -124,5 +135,6 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

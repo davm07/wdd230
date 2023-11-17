@@ -64,6 +64,7 @@ header {
     border-radius: 8px;
     background-color: var(--secondary-color);
     padding: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .container.title {
@@ -221,10 +222,6 @@ input:checked + .slider:before {
     text-align: right;
 }
 
-main {
-    margin: 2rem 0;
-}
-
 .hero {
     position: relative;
 }
@@ -290,8 +287,43 @@ main {
     text-align: left;
 }
 
-#weather-icon {
+.weather-icon {
     filter: brightness(0.9);
+}
+
+.forecast-inf {
+    display: flex;
+    align-items: flex-start;
+}
+
+.forecast-inf > * {
+    width: 100%;
+}
+
+#banner {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: .5rem 1rem;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+#banner button {
+    float: right;
+    color: var(--accent1-color);
+    border: none;
+    background-color: transparent;
+}
+
+.banner-show {
+    display: block;
+} 
+
+.banner-hide {
+    display: none;
 }
 
 footer{
@@ -300,6 +332,7 @@ footer{
     border-radius: 8px;
     background-color: var(--secondary-color);
     padding: 1rem;
+    margin-top: 1.2rem;
 }
 
 .container.final {
