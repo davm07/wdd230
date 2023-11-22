@@ -29,7 +29,7 @@ const displayDirectoryInfo = (members) => {
         websiteURL.textContent = `${member.websiteURL}`;
 
         memberLogo.setAttribute("data", member.imageFileName);
-        memberLogo.setAttribute("alt", member.name);
+        memberLogo.setAttribute("aria-label", member.name);
         logoContainer.setAttribute("class", "logo-card");
         logoContainer.appendChild(memberLogo);
 
