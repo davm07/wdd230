@@ -196,7 +196,13 @@ input:checked + .slider:before {
 .navigation a:hover {
     background-color: var(--accent1-color);
     transition: 0.5s;
-    color: var(--paragraph-color-on-color);
+    color: var(--primary-color);
+}
+
+.active::before {
+    content: "\f061";
+    font-family: FontAwesome;
+    margin-right: .2rem;
 }
 
 .open {
