@@ -560,10 +560,6 @@ form label.label-top textarea {
     border: 1px solid var(--accent2-color);
 }
 
-.directory-btn button svg {
-    fill: var(--accent2-color);
-}
-
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
