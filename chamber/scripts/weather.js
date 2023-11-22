@@ -19,7 +19,7 @@ async function apiFetchW(url) {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 }
 
@@ -33,7 +33,7 @@ async function apiFetchF(url) {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 }
 
@@ -79,6 +79,7 @@ function displayForecast(data) {
     let dayRange = 0;
     let counter = 0;
 
+    //Gabriel Ferrin Helped with this code
     data.list.forEach((forecast) => {
         const futureDate = new Date(forecast.dt * 1000);
         const nextDay = futureDate.getDate();
