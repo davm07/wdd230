@@ -200,7 +200,7 @@ input:checked + .slider:before {
 }
 
 .active::before {
-    content: "\f061";
+    content: "\f0a9";
     font-family: FontAwesome;
     margin-right: .2rem;
 }
