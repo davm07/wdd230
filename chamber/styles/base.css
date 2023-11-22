@@ -200,9 +200,13 @@ input:checked + .slider:before {
 }
 
 .active::before {
-    content: "\f0a9";
-    font-family: FontAwesome;
-    margin-right: .2rem;
+    content: "|";
+    margin-right: .3rem;
+}
+
+.active::after {
+    content: "|";
+    margin-left: .3rem;
 }
 
 .open {
