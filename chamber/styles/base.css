@@ -187,7 +187,7 @@ input:checked + .slider:before {
 .navigation li a {
     font-size: .9rem;
     display: block;
-    padding: .8rem;
+    padding: .9rem;
     text-align: center;
     text-decoration: none;
     color: var(--paragraph-color-on-color);
@@ -239,7 +239,7 @@ input:checked + .slider:before {
     border: none;
     font-family: var(--heading-font);
     border-radius: 6px;
-    padding: .7rem 1.4rem;
+    padding: .9rem 1.4rem;
     color: var(--button-paragraph-color);
     background-color: var(--button-background-color);
     box-shadow: 3px 3px 30px 6px rgba(0,0,0,0.90);
