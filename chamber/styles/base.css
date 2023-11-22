@@ -178,7 +178,6 @@ input:checked + .slider:before {
     margin: 0;
     list-style: none;
     font-size: 1.2em;
-    z-index: 1;
 }
 
 .navigation li {
@@ -210,6 +209,7 @@ input:checked + .slider:before {
     position: absolute;
     background-color: var(--secondary-color);
     border-radius: 6px;
+    z-index: 2;
 }
 
 .open li{
