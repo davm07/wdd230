@@ -304,7 +304,7 @@ input:checked + .slider:before {
 .forecast-inf {
     display: flex;
     align-items: flex-start;
-    gap: .5rem;
+    gap: .7rem;
 }
 
 .forecast-inf > * {
@@ -584,7 +584,7 @@ form label.label-top textarea {
     display: none
 }
 
-.cards .card a, .list section a {
+.cards .card a, .list section a, .website {
     color: var(--paragraph-color-on-white);
     font-size: 1rem;
     word-wrap: break-word;

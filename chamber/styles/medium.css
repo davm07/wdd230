@@ -24,10 +24,11 @@
     main {
         display: grid;
         grid-template-areas: 
-            'hero hero hero hero'
-            'card1 card1 card2 card2'
-            'splt splt splt splt';
+            'hero hero'
+            'card1 card2'
+            'splt splt';
         column-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .btn-cta{
@@ -45,6 +46,7 @@
 
     .card2 {
         grid-area: card2;
+        font-size: .78rem;
     }
 
     .splt{
@@ -55,25 +57,25 @@
             'title title title title'
             'member1 member1 member2 member2'
             'member3 member3 member3 member3';
-        column-gap: 1.5rem;
-        row-gap: 1.5rem;
+        gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .splt h2 {
         grid-area: title;
     }
 
-    .member1{
+    .card.splt div:nth-of-type(1) {
         grid-area: member1;
-        margin: 0;
+        margin-top: 0;
     }
 
-    .member2{
+    .card.splt div:nth-of-type(2){
         grid-area: member2;
         margin: 0;
     }
 
-    .member3{
+    .card.splt div:last-child {
         grid-area: member3;
         margin: 0;
     }
