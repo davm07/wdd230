@@ -94,10 +94,11 @@
     .join-main {
         grid-template-areas: 
         'title title title'
-        'form form benefits'
+        'form form benefits';
+        grid-template-columns: none;
     }
 
-    .join-main h1 {
+    .join-main h2 {
         grid-area: title;
     }
 

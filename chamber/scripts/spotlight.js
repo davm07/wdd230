@@ -38,10 +38,10 @@ function createMembers(set) {
         icon.setAttribute("aria-label", `${element.name} icon`);
         logoContainer.setAttribute("class", "logo-card");
 
-        const name = document.createElement("h3");
-        name.textContent = element.name;
+        // const name = document.createElement("h3");
+        // name.textContent = element.name;
 
-        const address = document.createElement("p");
+        const address = document.createElement("h3");
         address.textContent = element.address
 
         const phone = document.createElement("p");
