@@ -47,6 +47,7 @@
     .card2 {
         grid-area: card2;
         font-size: .78rem;
+        height: fit-content;
     }
 
     .splt{
@@ -100,6 +101,7 @@
 
     .join-main h2 {
         grid-area: title;
+        margin-top: 0;
     }
 
     .join-main form {
