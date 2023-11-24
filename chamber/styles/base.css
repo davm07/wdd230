@@ -557,8 +557,10 @@ form label.label-top textarea {
     height: 22rem;
 }
 
-.thx p {
-    font-size: 1.1rem;
+.thx h3 {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    font-weight: lighter;
 }
 
 /*---------DIRECTORY PAGE---------*/
