@@ -597,6 +597,7 @@ form label.label-top textarea {
     color: var(--paragraph-color-on-white);
     font-size: 1rem;
     word-wrap: break-word;
+    padding: .8rem 0;
 }
 
 .logo-card {
