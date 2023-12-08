@@ -22,20 +22,26 @@
     <!--CSS-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="https://kit.fontawesome.com/3a2c890ad7.js" crossorigin="anonymous"></script>
     <title>Welcome to Scoots!</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="logo-wraper">
             <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
-            <h1>Scoots</h1>
-            <span>Your Cozumel Escape</span>
+            <h1 class="title-wraper">Scoots<span class="subtitle">Your Cozumel Escape</span></h1>
         </div>
         <nav>
-            <button id="menu-btn" name="boton-menu" aria-label="Show menu">
+            <button class="menu-btn" aria-label="Main Menu">
+                <svg viewBox="0 0 100 100">
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
             </button>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservation</a></li>
@@ -72,10 +78,11 @@
         </table>
     </main>
     <footer>
-        <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
-        <p>Scoots</p>
-        <span>Your Cozumel Escape</span>
-        <p>&copy;Scoots <span id="current-year"></span></p>
+        <div class="logo-wraper">
+            <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
+            <h1 class="title-wraper">Scoots<span class="subtitle">Your Cozumel Escape</span></h1>
+        </div>
+        <p>&copy; Scoots <span id="current-year"></span></p>
         <a href="mailto:scoots.coz@gmail.com">scoots.coz@gmail.com</a>
         <p>
             <i class="fa-solid fa-location-dot"></i>
@@ -86,10 +93,13 @@
             Transversal Highway km 5.5, Cozumel, Q.R., 77660
         </p>
         <p>+52 987 879 7000</p>
-        <a href="https://www.facebook.com/groups/cozumel4yougroup/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-        <a href="https://www.instagram.com/mycozumel/?hl=es"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        <a href="https://twitter.com/OfficialCozumel"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+        <div class="ft-socials">
+            <a href="https://www.facebook.com/groups/cozumel4yougroup/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="https://www.instagram.com/mycozumel/?hl=es"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://twitter.com/OfficialCozumel"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+        </div>
         <a href="attributions.html">Attributions</a>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

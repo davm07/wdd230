@@ -23,20 +23,26 @@
     <!--CSS-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="https://kit.fontawesome.com/3a2c890ad7.js" crossorigin="anonymous"></script>
     <title>Welcome to Scoots!</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="logo-wraper">
             <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
-            <h1>Scoots</h1>
-            <span>Your Cozumel Escape</span>
+            <h1 class="title-wraper">Scoots<span class="subtitle">Your Cozumel Escape</span></h1>
         </div>
         <nav>
-            <button id="menu-btn" name="boton-menu" aria-label="Show menu">
+            <button class="menu-btn" aria-label="Main Menu">
+                <svg viewBox="0 0 100 100">
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
             </button>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservation</a></li>
@@ -57,21 +63,27 @@
             <h2>Know our Rentals</h2>
             <div class="vehicles">
                 <img src="images/scooter.svg" alt="Scooter" width="80" height="80"></img>
-                <h3>Scooters</h3>
-                <p>Honda Metropolitan (49cc) - Zip through Cozumel's streets with our lightweight and fuel-efficient scooters. (Ideally for <b>1</b> person)</p>
-                <p>Honda Dio (110cc) -  Explore Cozumel's urban and coastal areas in comfort with our mid-sized scooters. (Ideally for <b>2</b> people)</p>
-                <p>Honda PCX150 (149cc) - Experience the thrill of a powerful scooter that handles both city and off-road terrains. (Ideally for <b>2</b> people)</p>
+                <div class="vehicle-info">
+                    <h3>Scooters</h3>
+                    <p>Honda Metropolitan (49cc) - Zip through Cozumel's streets with our lightweight and fuel-efficient scooters. (Ideally for <b>1</b> person)</p>
+                    <p>Honda Dio (110cc) -  Explore Cozumel's urban and coastal areas in comfort with our mid-sized scooters. (Ideally for <b>2</b> people)</p>
+                    <p>Honda PCX150 (149cc) - Experience the thrill of a powerful scooter that handles both city and off-road terrains. (Ideally for <b>2</b> people)</p>
+                </div>
             </div>
             <div class="vehicles">
                 <img src="images/atv.svg" alt="Atvs" width="80" height="80"></img>
-                <h3>ATVs</h3>
-                <p>Honda Pioneer 1000 - Conquer Cozumel's rugged terrains and hidden gems with our versatile ATVs. (Ideally for <b>4</b> people)</p>
+                <div class="vehicle-info">
+                    <h3>ATVs</h3>
+                    <p>Honda Pioneer 1000 - Conquer Cozumel's rugged terrains and hidden gems with our versatile ATVs. (Ideally for <b>4</b> people)</p>
+                </div>
             </div>
             <div class="vehicles">
                 <img src="images/jeep.svg" aria-label="Jeep" width="80" height="80"></img>
-                <h3>Jeeps</h3>
-                <p>Jeep Wrangler - 4 door manual with A/C - Cruise Cozumel's winding roads and scenic coastlines with our spacious and comfortable Jeeps. (Ideally for <b>5</b> people)</p>
-                <p>Jeep Wrangler - 2 door - open air - manual - Embark on an open-air adventure with our iconic Jeeps, perfect for couples and smaller groups. (Ideally for <b>4</b> people)</p>
+                <div class="vehicle-info">
+                    <h3>Jeeps</h3>
+                    <p>Jeep Wrangler - 4 door manual with A/C - Cruise Cozumel's winding roads and scenic coastlines with our spacious and comfortable Jeeps. (Ideally for <b>5</b> people)</p>
+                    <p>Jeep Wrangler - 2 door - open air - manual - Embark on an open-air adventure with our iconic Jeeps, perfect for couples and smaller groups. (Ideally for <b>4</b> people)</p>
+                </div>
             </div>
         </section>
         <section id="social">
@@ -94,10 +106,11 @@
         </section>
     </main>
     <footer>
-        <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
-        <p>Scoots</p>
-        <span>Your Cozumel Escape</span>
-        <p>&copy;Scoots <span id="current-year"></span></p>
+        <div class="logo-wraper">
+            <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
+            <h1 class="title-wraper">Scoots<span class="subtitle">Your Cozumel Escape</span></h1>
+        </div>
+        <p>&copy; Scoots <span id="current-year"></span></p>
         <a href="mailto:scoots.coz@gmail.com">scoots.coz@gmail.com</a>
         <p>
             <i class="fa-solid fa-location-dot"></i>
@@ -108,10 +121,13 @@
             Transversal Highway km 5.5, Cozumel, Q.R., 77660
         </p>
         <p>+52 987 879 7000</p>
-        <a href="https://www.facebook.com/groups/cozumel4yougroup/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-        <a href="https://www.instagram.com/mycozumel/?hl=es"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        <a href="https://twitter.com/OfficialCozumel"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+        <div class="ft-socials">
+            <a href="https://www.facebook.com/groups/cozumel4yougroup/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="https://www.instagram.com/mycozumel/?hl=es"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://twitter.com/OfficialCozumel"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+        </div>
         <a href="attributions.html">Attributions</a>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
