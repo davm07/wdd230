@@ -29,6 +29,12 @@
     <title>Welcome to Scoots!</title>
 </head>
 <body>
+    <div id="temp-alert">
+        <p>Today's highest temperature <span id="temp-msg"></span></p>
+        <button name="close-alert" class="close-alert">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
     <header>
         <div class="logo-wraper">
             <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
@@ -50,7 +56,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="first-page">
         <div class="hero">
             <picture>
                 <source srcset="images/hero-small.webp" media="(max-width: 500px)">
@@ -94,14 +100,16 @@
         </section>
         <section id="weather">
             <div id="today-weather">
+                <p>Today</p>
+                <div id="weather-events"></div>
                 <p>Temperature: <span id="temperature"></span></p>
-                <p id="description"></p>
                 <p>Humidity: <span id="humidity"></span></p>
             </div>
-            <div class="forecast">
-                <p>Temperature: <span id="temperature"></span></p>
-                <p id="description"></p>
-                <p>Humidity: <span id="humidity"></span></p>
+            <div id="forecast">
+                <p>Tomorrow</p>
+                <div id="weather-forecast"></div>
+                <p>Temperature: <span id="temp-forecast"></span></p>
+                <p>Humidity: <span id="humidity-forecast"></span></p>
             </div>
         </section>
     </main>

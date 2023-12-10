@@ -115,6 +115,7 @@ header {
     padding: 1rem 0;
     color: var(--secondary-color);
     width: 100%;
+    font-size: 1.2rem;
 }
 
 .open {
@@ -168,14 +169,20 @@ header {
     transform: translate(-50%, -50%);
 }
 /*-------Rentals Section--------*/
+.first-page section {
+    padding: 0.8rem;
+}
+
+.first-page section h2 {
+    margin-top: 0;
+}
+
 #rentals {
     background-color: var(--section-color-01);
-    padding: 0.8rem;
 }
 
 #rentals h2 {
     text-align: center;
-    margin-top: 0;
     border-bottom: 2px solid var(--secondary-color);
 }
 
@@ -190,7 +197,7 @@ header {
     align-items: center;
     gap: 15px;
 }
-
+/*-------Socials Section--------*/
 
 
 /*-------Footer Section--------*/
