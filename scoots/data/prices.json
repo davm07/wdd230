@@ -5,20 +5,19 @@
             "capacity": "1",
             "prices": [
                 {
-                    "reservation": [
+                    "reservation": 
                         {
                             "halfDay": "20",
                             "fullDay": "30"
                         }
-                    ]
+                    
                 },
                 {
-                    "walkIn": [
+                    "walkIn": 
                         {
                             "halfDay": "25",
                             "fullDay": "35"
                         }
-                    ]
                 }
             ]
         },
@@ -27,20 +26,18 @@
             "capacity": "2",
             "prices": [
                 {
-                    "reservation": [
+                    "reservation": 
                         {
                             "halfDay": "30",
                             "fullDay": "40"
                         }
-                    ]
                 },
                 {
-                    "walkIn": [
+                    "walkIn": 
                         {
                             "halfDay": "35",
                             "fullDay": "45"
                         }
-                    ]
                 }
             ]
         },
@@ -49,20 +46,18 @@
             "capacity": "2",
             "prices": [
                 {
-                    "reservation": [
+                    "reservation": 
                         {
                             "halfDay": "40",
                             "fullDay": "50"
                         }
-                    ]
                 },
                 {
-                    "walkIn": [
+                    "walkIn":
                         {
                             "halfDay": "45",
                             "fullDay": "55"
                         }
-                    ]
                 }
             ]
         },
@@ -71,20 +66,18 @@
             "capacity": "4",
             "prices": [
                 {
-                    "reservation": [
+                    "reservation": 
                         {
                             "halfDay": "50",
                             "fullDay": "70"
                         }
-                    ]
                 },
                 {
-                    "walkIn": [
+                    "walkIn": 
                         {
                             "halfDay": "60",
                             "fullDay": "80"
                         }
-                    ]
                 }
             ]
         },
@@ -93,20 +86,18 @@
             "capacity": "5",
             "prices": [
                 {
-                    "reservation": [
+                    "reservation": 
                         {
                             "halfDay": "70",
                             "fullDay": "100"
                         }
-                    ]
                 },
                 {
-                    "walkIn": [
+                    "walkIn": 
                         {
                             "halfDay": "85",
                             "fullDay": "125"
                         }
-                    ]
                 }
             ]
         },
@@ -115,20 +106,18 @@
             "capacity": "4",
             "prices": [
                 {
-                    "reservation": [
+                    "reservation": 
                         {
                             "halfDay": "60",
                             "fullDay": "85"
                         }
-                    ]
                 },
                 {
-                    "walkIn": [
+                    "walkIn": 
                         {
                             "halfDay": "70",
                             "fullDay": "90"
                         }
-                    ]
                 }
             ]
         }
