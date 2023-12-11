@@ -229,3 +229,35 @@ footer a {
     justify-content: center;
     gap: 0.8rem;
 }
+
+
+
+/*-------Rentals page--------*/
+#rentals-page{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+}
+
+#rental-vehicles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.rental-type {
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.75);
+    border-radius: var(--border-corner);
+}
+
+.rental-type img {
+    padding: .5rem;
+}
+
+.rental-type p {
+    margin: 0;
+    padding: .5rem;
+    border-radius: 0 0 var(--border-corner) var(--border-corner);
+}
