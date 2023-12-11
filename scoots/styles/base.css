@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap'); 'Fjalla One', sans-serif*/
 
 :root {
-    --font: 'Roboto Condensed', 'Arial', sans-serif;
+    --font: 'Rubik', sans-serif;
     --primary-color: #FFFFFF;
     --secondary-color: #394047;
-    --tertiary-color: #1f605a;
+    --tertiary-color: #1b504b;
     --section-color-01: #c5f2c6;
+    --section-color-02: #f4f4f8;
     --border-corner: 16px;
 }
-
-/*background: rgb(31,96,90);
-background: linear-gradient(180deg, rgba(31,96,90,1) 46%, rgba(197,242,198,1) 100%);*/
 
 * {
     padding: 0;
@@ -228,12 +227,16 @@ header {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -20%);
-    background-color: hsla(174, 51%, 25%, 0.80);
+    background-color: hsla(174, 50%, 21%, 0.80);
     border-radius: var(--border-corner);
     padding: 1rem;
     width: 75%;
     color: var(--primary-color);
     font-size: 1.5rem;
+}
+
+#invitation p {
+    margin: 0;
 }
 /*-------Rentals Section--------*/
 .first-page {
@@ -242,7 +245,7 @@ header {
 }
 
 .first-page section {
-    margin: .8rem 0;
+    margin: 1rem 0;
     padding: 0.8rem;
     border-radius: var(--border-corner);
 }
@@ -255,13 +258,9 @@ header {
     background-color: var(--section-color-01);
 }
 
-#rentals h2 {
-    text-align: center;
-    border-bottom: 2px solid var(--secondary-color);
-}
-
-#rentals p {
-    font-size: 0.9rem
+#rentals ul {
+    font-size: 0.9rem;
+    list-style: circle;
 }
 
 .vehicles {
@@ -269,18 +268,31 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 1.2rem;
 }
 /*-------Socials Section--------*/
+#social {
+    background-color: var(--secondary-color);
+    color: var(--section-color-01);
+}
+
 #social a {
     display: flex;
     align-items: center;
     width: 100%;
     margin: .4rem 0;
+    color: var(--section-color-01);
+    gap: .5rem;
 }
-/*-------Socials Section--------*/
-#weather h2 {
-    margin: 0;
+
+.icon-media {
+    filter: invert(81%) sepia(5%) saturate(1432%) hue-rotate(72deg) brightness(117%) contrast(90%);
+}
+/*-------Weather Section--------*/
+#weather {
+    background-color: var(--section-color-02);
+    border-radius: var(--border-corner);
+    color: var(--tertiary-color);
 }
 
 .weather-info {
@@ -315,7 +327,7 @@ footer {
     text-align: center;
     background-color: var(--tertiary-color);
     color: var(--primary-color);
-    padding: .8rem .2rem;
+    padding: .8rem .5rem;
 }
 
 footer .logo-wraper {
@@ -341,15 +353,13 @@ footer a {
 .address {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
-.icon-footer{
+.social-icon{
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(284deg) brightness(104%) contrast(107%);
 }
-
-
 /*-------Rentals page--------*/
 #rentals-page{
     display: grid;
