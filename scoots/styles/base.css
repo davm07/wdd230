@@ -9,6 +9,9 @@
     --border-corner: 5px;
 }
 
+/*background: rgb(31,96,90);
+background: linear-gradient(180deg, rgba(31,96,90,1) 46%, rgba(197,242,198,1) 100%);*/
+
 * {
     padding: 0;
     text-decoration: none;
@@ -22,30 +25,73 @@ body {
 }
 
 header {
-    padding: .5rem;
+    padding: 0 .5rem; 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 65px;
 }
 
+/*-------Temp Alert--------*/
+#temp-alert {
+    position: relative;
+    text-align: center;
+}
+
+.message {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: .5rem 0;
+    transition: all .5s ease;
+    max-height: 30px;
+}
+
+.message p {
+    font-size: .9rem;
+    margin: 0;
+}
+
+.close-alert {
+    top: 15px;
+    right: 0px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: top .5s ease;
+}
+
+.close-alert svg {
+    fill: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.closed {
+    opacity: 0;
+    max-height: 0px;
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+.closed-btn {
+    top: -5px;
+}
+
+.closed-btn svg{
+    fill: var(--secondary-color);
+    transform: rotate(180deg);
+}
+
+/*-------Logo Alert--------*/
 .logo-wraper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
-    text-align: left;
 }
 
 .title-wraper {
-    display: flex;
-    flex-direction: column;
     margin: 0;
-}
-
-.subtitle {
-    font-size: 0.8rem;
-    font-weight: normal;
 }
 
 /*-------Menu Button--------*/
@@ -129,6 +175,7 @@ header {
     background-color: var(--secondary-color);
     z-index: 1;
     padding: 50% 0;
+    margin: .5rem 0;
 }
 
 .open li a {
@@ -141,6 +188,10 @@ header {
 
 .open li:hover a {
     color: var(--secondary-color);
+}
+
+.stop-scroll {
+    overflow: hidden;
 }
 
 /*-------Hero Section--------*/
@@ -198,7 +249,41 @@ header {
     gap: 15px;
 }
 /*-------Socials Section--------*/
+#social a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: .4rem 0;
+}
+/*-------Socials Section--------*/
+#weather h2 {
+    margin: 0;
+}
 
+.weather-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.weather-container {
+    position: relative;
+    width: 100%;
+    padding: .5rem;
+}
+
+.weather-container p {
+    margin: 0;
+}
+
+.temp-label {
+    position: absolute;
+    top: 1rem;
+    right: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 /*-------Footer Section--------*/
 footer {
@@ -207,15 +292,15 @@ footer {
     text-align: center;
     background-color: var(--tertiary-color);
     color: var(--primary-color);
-    padding: .8rem 0;
+    padding: .8rem .2rem;
 }
 
 footer .logo-wraper {
     justify-content: center;
 }
 
-footer p, footer a, .ft-socials {
-    margin: .7rem 0;
+footer p, footer a{
+    margin: .5rem 0;
     font-size: .9rem;
 }
 
@@ -230,6 +315,16 @@ footer a {
     gap: 0.8rem;
 }
 
+.address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-footer{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(284deg) brightness(104%) contrast(107%);
+}
 
 
 /*-------Rentals page--------*/

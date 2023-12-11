@@ -29,16 +29,19 @@
 </head>
 <body>
     <div id="temp-alert">
-        <p>Today's highest temperature <span id="temp-msg"></span></p>
+        <div class="message">
+            <p>Today's highest temperature</p>
+            <p id="temp-msg"></p>
+        </div>        
         <button name="close-alert" class="close-alert" aria-label="Close temperature alert">
-            <object data="images/arrowup.svg" aria-label="close-alert"></object>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6l-6 6l1.41 1.41Z"/></svg>
         </button>
     </div>
     <header>
         <div class="logo-wraper">
-            <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
-            <h1 class="title-wraper">Scoots<span class="subtitle">Your Cozumel Escape</span></h1>
+            <img src="images/logo.webp" alt="Scoots Logo" width="44" height="44">
         </div>
+        <h1 class="title-wraper">Scoots</span></h1>
         <nav>
             <button class="menu-btn" aria-label="Main Menu">
                 <svg viewBox="0 0 100 100">
@@ -62,7 +65,7 @@
                 <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
                 <img src="images/hero-large.webp" alt="Cozumel" width="1400" height="700">
             </picture>
-            <a class="btn-cta" href="contact.html">Explore Cozumel!</a>
+            <a class="btn-cta" href="reservations.html">Explore Cozumel!</a>
         </div>
         <section id="rentals">
             <h2>Know our Rentals</h2>
@@ -98,44 +101,47 @@
             <a href="https://twitter.com/OfficialCozumel"><img src="images/twitter.svg" alt="Twitter Contact" width="44" height="44">Follow on Twitter</a>
         </section>
         <section id="weather">
-            <div id="today-weather">
-                <p>Today</p>
-                <div id="weather-events"></div>
-                <p>Temperature: <span id="temperature"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
-            </div>
-            <div id="forecast">
-                <p>Tomorrow</p>
-                <div id="weather-forecast"></div>
-                <p>Temperature: <span id="temp-forecast"></span></p>
-                <p>Humidity: <span id="humidity-forecast"></span></p>
+            <h2>Weather</h2>
+            <div class="weather-info">
+                <div id="today-weather" class="weather-container">
+                    <div id="weather-events"></div>
+                    <p id="temperature" class="temp-label"></p>
+                    <p>Today</p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                </div>
+                <div id="forecast" class="weather-container">
+                    <div id="weather-forecast"></div>
+                    <p id="temp-forecast" class="temp-label"></p>
+                    <p>Tomorrow</p>
+                    <p>Humidity: <span id="humidity-forecast"></span></p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="logo-wraper">
             <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60">
-            <h1 class="title-wraper">Scoots<span class="subtitle">Your Cozumel Escape</span></h1>
         </div>
         <p>&copy; Scoots <span id="current-year"></span></p>
         <a href="mailto:scoots.coz@gmail.com">scoots.coz@gmail.com</a>
-        <p>
-            <img src="images/locationSy.svg" alt="Location Symbol" width="18" height="18">
+        <p class="address">
+            <img src="images/locationSy.svg" alt="Location Symbol" width="18" height="18" class="icon-footer">
             1st South Street, Downtown, Cozumel, Q.R., 77660
         </p>
-        <p>
-            <img src="images/locationSy.svg" alt="Location Symbol" width="18" height="18">
+        <p class="address"> 
+            <img src="images/locationSy.svg" alt="Location Symbol" width="18" height="18" class="icon-footer">
             Transversal Highway km 5.5, Cozumel, Q.R., 77660
         </p>
         <p>+52 987 879 7000</p>
         <div class="ft-socials">
-            <a href="https://www.facebook.com/groups/cozumel4yougroup/" aria-label="Facebook Link"><img src="images/facebook.svg" alt="Facebook Link" width="44" height="44"></a>
-            <a href="https://www.instagram.com/mycozumel/?hl=es"><img src="images/instagram.svg" alt="Instagram Link" width="44" height="44"></a>
-            <a href="https://twitter.com/OfficialCozumel"><img src="images/twitter.svg" alt="Twitter Link" width="44" height="44"></a>
+            <a href="https://www.facebook.com/groups/cozumel4yougroup/" aria-label="Facebook Link"><img src="images/facebook.svg" alt="Facebook Link" width="44" height="44" class="icon-footer"></a>
+            <a href="https://www.instagram.com/mycozumel/?hl=es"><img src="images/instagram.svg" alt="Instagram Link" width="44" height="44" class="icon-footer"></a>
+            <a href="https://twitter.com/OfficialCozumel"><img src="images/twitter.svg" alt="Twitter Link" width="44" height="44" class="icon-footer"></a>
         </div>
         <a href="attributions.html">Attributions</a>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/notification.js"></script>
     <script src="scripts/weather.js"></script>
 </body>
 </html>
