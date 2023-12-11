@@ -3,10 +3,10 @@
 :root {
     --font: 'Roboto Condensed', 'Arial', sans-serif;
     --primary-color: #FFFFFF;
-    --secondary-color: #444c54;
+    --secondary-color: #394047;
     --tertiary-color: #1f605a;
     --section-color-01: #c5f2c6;
-    --border-corner: 5px;
+    --border-corner: 16px;
 }
 
 /*background: rgb(31,96,90);
@@ -72,6 +72,7 @@ header {
     max-height: 0px;
     margin: 0 0 2px 0;
     padding: 0;
+    color: var(--secondary-color);
 }
 
 .closed-btn {
@@ -97,8 +98,7 @@ header {
 /*-------Menu Button--------*/
 .menu-btn {
     background-color: transparent;
-    border: 1px solid var(--secondary-color);
-    border-radius: var(--border-corner);
+    border: none;
     cursor: pointer;
     display: flex;
     padding: 0;
@@ -201,27 +201,50 @@ header {
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    border-radius: var(--border-corner);
 }
 
 .btn-cta {
+    text-align: center;
     background-color: var(--tertiary-color);
     color: var(--primary-color);
     padding: 1rem;
     border-radius: var(--border-corner);
     font-size: 1.2rem;
+    width: 70%;
 }
 
 .hero .btn-cta {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
+}
+
+#invitation {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: hsla(174, 51%, 25%, 0.80);
+    border-radius: var(--border-corner);
+    padding: 1rem;
+    width: 75%;
+    color: var(--primary-color);
+    font-size: 1.5rem;
 }
 /*-------Rentals Section--------*/
+.first-page {
+    padding: 0 .8rem;
+    margin: 1rem 0;
+}
+
 .first-page section {
+    margin: .8rem 0;
     padding: 0.8rem;
+    border-radius: var(--border-corner);
 }
 
 .first-page section h2 {
