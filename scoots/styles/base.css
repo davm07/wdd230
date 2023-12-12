@@ -385,6 +385,10 @@ th{
     font-weight: lighter;
 }
 
+.hidden-cell {
+    font-size: 0;
+}
+
 caption {
     background-color: var(--tertiary-color);
     color: var(--primary-color);
