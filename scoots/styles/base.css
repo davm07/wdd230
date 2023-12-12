@@ -547,6 +547,10 @@ td::before {
     padding: .8rem 1rem;
 }
 
+.contact-info li a {
+    word-wrap: break-word;
+}
+
 #contact {
     background-color: var(--section-color-02);
     padding: .8rem;
@@ -567,12 +571,18 @@ td::before {
     margin-top: 0;
 }
 
+#inquiry-form form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 #inquiry-form form p {
     margin: 1rem 0 0 0;
 }
 
 #inquiry-form textarea {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 #inquiry-form .res-btn {
