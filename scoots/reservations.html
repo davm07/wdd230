@@ -95,6 +95,7 @@
         
                 <label for="rental-type">Rental Type:*</label>
                 <select id="rental-type" name="rental-type" required>
+                    <option value="">Choose a vehicle...</option>
                     <option value="scooter">Honda Dio (Scooter)</option>
                     <option value="scooter">Honda Metropolitan (Scooter)</option>
                     <option value="scooter">Honda PCX150 (Scooter)</option>
@@ -107,7 +108,7 @@
                 <input type="number" id="rental-number" name="rental-number" min="1" required>
     
                 <label for="rental-dropoff">Special Accommodation/Comments</label>
-                <textarea id="rental-dropoff" name="rental-dropoff" cols="30" rows="8"placeholder="Specify drop-off location (if applicable)"></textarea>
+                <textarea id="rental-dropoff" name="rental-dropoff" cols="30" rows="8" placeholder="Specify drop-off location (if applicable)"></textarea>
             </fieldset>
     
             <button type="submit" id="res-btn">Make My Reservation</button>
