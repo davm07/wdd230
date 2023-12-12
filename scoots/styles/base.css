@@ -469,12 +469,12 @@ td::before {
     padding: .8rem;
 }
 
-#res-form legend {
+#res-form legend, #inquiry-form form legend{
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-#res-form label {
+#res-form label, #inquiry-form label{
     display: block;
     padding-top: 1.3rem;
     font-size: .9rem;
@@ -482,7 +482,7 @@ td::before {
     font-weight: bold;
 }
 
-#res-form input, #res-form textarea, #res-form select {
+#res-form input, #res-form textarea, #res-form select,  #inquiry-form input, #inquiry-form textarea{
     box-sizing: border-box;
     display: block;
     font-size: 1rem;
@@ -496,11 +496,11 @@ td::before {
     max-width: 30rem;
 }
 
-#res-form textarea {
+#res-form textarea, #inquiry-form textarea{
     resize: none;
 }
 
-#res-btn {
+.res-btn {
     padding: .8rem;
     border-radius: var(--border-corner);
     border: none;
@@ -530,4 +530,52 @@ td::before {
     font-size: .9rem;
     margin: .4rem 0;
     font-weight: lighter;
+}
+
+/*-------Contact Page--------*/
+.fourth-page h2 {
+    color: var(--tertiary-color);
+}
+
+.fourth-page section {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: var(--border-corner);
+}
+
+.contact-info ul{
+    padding: .8rem 1rem;
+}
+
+#contact {
+    background-color: var(--section-color-02);
+    padding: .8rem;
+}
+
+#map iframe {
+    width: 100%;
+    border: none;
+    border-radius: var(--border-corner);
+}
+
+#inquiry-form {
+    background-color: var(--secondary-color);
+    color: var(--section-color-02);
+}
+
+#inquiry-form h3{
+    margin-top: 0;
+}
+
+#inquiry-form form p {
+    margin: 1rem 0 0 0;
+}
+
+#inquiry-form textarea {
+    margin-bottom: 1.3rem;
+}
+
+#inquiry-form .res-btn {
+    background-color: var(--section-color-01);
+    color: var(--secondary-color);
 }

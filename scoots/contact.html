@@ -48,7 +48,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="fourth-page">
         <h2>Contact Us</h2>
         <section id="contact">
             <h3>Our Locations</h3>
@@ -56,7 +56,7 @@
                 <h4>El Centro de Cozumel Location</h4>
                 <ul>
                     <li>
-                        <strong>Phone:</strong> +52-1-987-123-4567
+                        <strong>Phone:</strong> +52 1 987 123 4567
                     </li>
                     <li>
                         <strong>Email:</strong> <a href="mailto:scootscentro@cozumel.com">scootscentro@cozumel.com</a>
@@ -67,12 +67,11 @@
                     </li>
                 </ul>
             </div>
-
             <div class="contact-info">
                 <h4>Terminal Puerta Maya Location</h4>
                 <ul>
                     <li>
-                        <strong>Phone:</strong> +52-1-987-567-8901
+                        <strong>Phone:</strong> +52 1 987 567 8901
                     </li>
                     <li>
                         <strong>Email:</strong> <a href="mailto:scootspuertamaya@cozumel.com">scootspuertamaya@cozumel.com</a>
@@ -84,11 +83,15 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GjSRdEVfGQP3fmkRiA9ti7SjJlcQExY&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+        </div>
+        <section id="inquiry-form">
             <h3>Get in touch with us</h3>
             <p>Ask your inquires now and let us help you plan your Cozumel adventure.</p>
             <p>Simply fill out the form below and one of our friendly representatives will get back to you promptly to answer all your questions.</p>
             <form action="confirmation.html" method="get">
+                <legend>Send your Inquiry</legend>
                 <p>*️ indicates a required field</p>
                 <label for="name">Full Name:*</label>
                 <input type="text" id="name" name="name" required>
@@ -98,13 +101,9 @@
 
                 <label for="comment">Message:*</label>
                 <textarea id="comment" name="comment" rows="5" required></textarea>
-
-                <button type="submit">Send My Inquiry</button>
+                <button type="submit" class="res-btn">Send My Inquiry</button>
             </form>
         </section>
-        <div id="map">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GjSRdEVfGQP3fmkRiA9ti7SjJlcQExY&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-        </div>
     </main>
     <footer>
         <div class="logo-wraper">

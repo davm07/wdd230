@@ -74,7 +74,7 @@
                 <input type="text" id="rental-name" name="name" required>
         
                 <label for="rental-phone">Phone Number:*</label>
-                <input type="tel" id="rental-phone" name="phone" required>
+                <input type="tel" id="rental-phone" name="phone" placeholder="Only numbers" pattern="^[0-9]*$" required>
         
                 <label for="rental-email">Email Address:*</label>
                 <input type="email" id="rental-email" name="email" required>
@@ -111,7 +111,7 @@
                 <textarea id="rental-dropoff" name="rental-dropoff" cols="30" rows="8" placeholder="Specify drop-off location (if applicable)"></textarea>
             </fieldset>
     
-            <button type="submit" id="res-btn">Make My Reservation</button>
+            <button type="submit" class="res-btn">Make My Reservation</button>
         </form>
     </main>
     <footer>
