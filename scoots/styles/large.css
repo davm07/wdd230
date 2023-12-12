@@ -1,0 +1,97 @@
+@media screen and (min-width: 960px) {
+    header {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    header .logo-wraper img{
+        width: 80px;
+        height: 80px;
+    }
+
+    main, .first-page section {
+        margin: 2rem 0;
+    }
+
+    .first-page section {
+        padding: 1.5rem;
+    }
+    
+    .menu-btn {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .navigation li {
+        margin: 0 1rem;
+    }
+
+    .navigation li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        width: fit-content;
+        height: 100%;
+        border-radius: var(--border-corner);
+        transition: all .3s ease;
+    }
+
+    .navigation li a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .navigation .contact-btn a{
+        color: var(--primary-color);
+    }
+
+    .hero img:hover {
+        box-shadow: 0px 0px 30px -15px hsla(210, 11%, 25%, 0.8);
+    }
+
+    #invitation p{
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    .btn-cta {
+        font-size: 1.2rem;
+        max-width: 20rem;
+        transition: all .3s ease;
+    }
+
+    .btn-cta:hover {
+        background-color: var(--secondary-color);
+    }
+
+    #rentals ul {
+        font-size: 1rem;
+    }
+
+    #rentals ul li {
+        margin: .5rem 0;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .container-final {
+        gap: 2rem;
+    }
+    
+    #social, #weather {
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    /*------Rentals Page------*/
+}
