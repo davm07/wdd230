@@ -93,6 +93,10 @@
         width: 100%;
     }
 
+    .temp-label {
+        right: 0.5rem;
+    }
+
     /*------Rentals Page------*/
     #rentals-page {
         display: grid;

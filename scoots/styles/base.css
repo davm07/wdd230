@@ -313,6 +313,10 @@ main {
     padding: .5rem;
 }
 
+.weather-container img {
+    filter: contrast(0.8) ;
+}
+
 .weather-container p {
     margin: 0;
 }

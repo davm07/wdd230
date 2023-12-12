@@ -90,8 +90,8 @@ function createElements(list, container) {
         let icon = `https://openweathermap.org/img/wn/${element.icon}@2x.png`;
         imgIcon.setAttribute("src", icon);
         imgIcon.setAttribute("alt", eventDsc);
-        imgIcon.setAttribute("width", "50");
-        imgIcon.setAttribute("height", "50");
+        imgIcon.setAttribute("width", "40");
+        imgIcon.setAttribute("height", "40");
 
         containerElements.append(imgIcon, eventTitle, eventDsc);
 
