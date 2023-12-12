@@ -246,7 +246,7 @@ header {
     margin: 0;
 }
 /*-------Rentals Section--------*/
-.first-page, .second-page {
+main {
     padding: 0 .8rem;
     margin: 1rem 0;
 }
@@ -369,7 +369,7 @@ footer a {
 }
 
 /*-------Rentals page--------*/
-.second-page h2 {
+.second-page h2, .third-page h2{
     color: var(--tertiary-color);
 }
 
@@ -451,3 +451,83 @@ td::before {
     border-radius: 0 0 var(--border-corner) var(--border-corner);
 }
 
+/*-------Reservation Page--------*/
+#res-form {
+    background-color: var(--section-color-01);
+    border-radius: var(--border-corner);
+    padding: .8rem;
+}
+
+#res-form p {
+    margin: 0;
+}
+
+#res-form fieldset {
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-corner);
+    margin: 0 0 1.2rem 0;
+    padding: .8rem;
+}
+
+#res-form legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#res-form label {
+    display: block;
+    padding-top: 1.3rem;
+    font-size: .9rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+#res-form input, #res-form textarea, #res-form select {
+    box-sizing: border-box;
+    display: block;
+    font-size: 1rem;
+    padding: .8rem;
+    width: 100%;
+    border: none;
+    margin-top: .15rem;
+    background-color: var(--section-color-02);
+    border-radius: var(--border-corner);
+    color: var(--secondary-color);
+    max-width: 30rem;
+}
+
+#res-form textarea {
+    resize: none;
+}
+
+#res-btn {
+    padding: .8rem;
+    border-radius: var(--border-corner);
+    border: none;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    color: var(--section-color-02);
+    font-size: 1rem;
+}
+
+.cont-agreements {
+    padding: .8rem;
+    background-color: var(--secondary-color);
+    margin-bottom: 1rem;
+    border-radius: var(--border-corner);
+    color: var(--section-color-01);
+}
+
+.cont-agreements h3 {
+    margin: 0;
+}
+
+.agreements {
+    padding: .8rem;
+}
+
+.agreements li {
+    font-size: .9rem;
+    margin: .4rem 0;
+    font-weight: lighter;
+}
