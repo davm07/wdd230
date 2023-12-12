@@ -7,7 +7,6 @@ function AddTableARIA() {
         var allCaptions = document.querySelectorAll("caption");
         for (var i = 0; i < allCaptions.length; i++) {
             allCaptions[i].setAttribute("aria-label", "caption"); 
-            allCaptions[i].setAttribute("role", "heading");
         }
         var allRowGroups = document.querySelectorAll("thead, tbody, tfoot");
         for (var i = 0; i < allRowGroups.length; i++) {
