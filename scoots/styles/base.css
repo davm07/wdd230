@@ -100,6 +100,7 @@ header {
     border: none;
     cursor: pointer;
     display: flex;
+    align-items: center;
     padding: 0;
     width: 44px;
     height: 44px;
@@ -365,21 +366,17 @@ footer a {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(284deg) brightness(104%) contrast(107%);
 }
 
-/*-------Rentals page--------*/
-.second-page h2, .third-page h2{
+/*--------------------------Rentals page--------------------------*/
+.second-page h2, .third-page h2, .fourth-page h2{
     color: var(--tertiary-color);
-}
-
-#rentals-page{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
 }
 
 /*-------Rentals Table--------*/
 #rentals-page table {
-    width: fit-content;
+    width: 100%;
     border-collapse: collapse;
     height: fit-content;
+    margin: 1rem 0;
 }
 
 th{
@@ -425,8 +422,7 @@ td::before {
 /*-------Rentals Vehicles--------*/
 #rental-vehicles {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
 }
 
@@ -435,7 +431,8 @@ td::before {
     text-align: center;
     box-shadow: 0px 0px 30px -15px hsla(210, 11%, 25%, 0.8);
     border-radius: var(--border-corner);
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .rental-type img {
@@ -448,7 +445,7 @@ td::before {
     border-radius: 0 0 var(--border-corner) var(--border-corner);
 }
 
-/*-------Reservation Page--------*/
+/*--------------------------Reservation Page--------------------------*/
 #res-form {
     background-color: var(--section-color-01);
     border-radius: var(--border-corner);
@@ -529,11 +526,7 @@ td::before {
     font-weight: lighter;
 }
 
-/*-------Contact Page--------*/
-.fourth-page h2 {
-    color: var(--tertiary-color);
-}
-
+/*--------------------------Contact Page--------------------------*/
 .fourth-page section {
     margin: 1rem 0;
     padding: 0.8rem;

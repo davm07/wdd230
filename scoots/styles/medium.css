@@ -118,4 +118,15 @@
     }
 
     /*------Rentals Page------*/
+    th, td{
+        display: table-cell;
+    }
+
+    th {
+        font-size: .8rem;
+    }
+
+    td::before {
+        content: "";
+    }
 }
