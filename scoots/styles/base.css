@@ -150,6 +150,7 @@ header {
 }
 
 .navigation li {
+    margin: .2rem auto;
     box-sizing: border-box;
     list-style: none;
     transition: .4s;
@@ -191,6 +192,12 @@ header {
 
 .stop-scroll {
     overflow: hidden;
+}
+
+.contact-btn {
+    width: 70%;
+    border-radius: var(--border-corner);
+    background-color: var(--tertiary-color);
 }
 
 /*-------Hero Section--------*/
@@ -239,7 +246,7 @@ header {
     margin: 0;
 }
 /*-------Rentals Section--------*/
-.first-page {
+.first-page, .second-page {
     padding: 0 .8rem;
     margin: 1rem 0;
 }
@@ -360,12 +367,65 @@ footer a {
 .social-icon{
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(284deg) brightness(104%) contrast(107%);
 }
+
 /*-------Rentals page--------*/
-#rentals-page{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+.second-page h2 {
+    color: var(--tertiary-color);
 }
 
+#rentals-page{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+
+/*-------Rentals Table--------*/
+#rentals-page table {
+    width: fit-content;
+    border-collapse: collapse;
+    height: fit-content;
+}
+
+th{
+    background-color: var(--section-color-01);
+    color: var(--secondary-color);
+    font-weight: lighter;
+}
+
+caption {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+caption, th {
+    text-align: left;
+}
+
+tr:nth-of-type(2n-1) {
+    background-color: var(--section-color-02);
+}
+
+caption, th, td {
+    padding: .5rem;
+}
+
+th {
+    display: none;
+}
+
+td {
+    display: grid;
+    grid-template-columns: 10ch auto;
+    gap: .5rem;
+}
+
+td::before {
+    content: attr(data-cell) ": ";
+    font-weight: bold;
+}
+
+/*-------Rentals Vehicles--------*/
 #rental-vehicles {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
@@ -376,8 +436,9 @@ footer a {
 .rental-type {
     margin: 0 auto;
     text-align: center;
-    box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px -15px hsla(210, 11%, 25%, 0.8);
     border-radius: var(--border-corner);
+    width: 250px;
 }
 
 .rental-type img {
@@ -389,3 +450,4 @@ footer a {
     padding: .5rem;
     border-radius: 0 0 var(--border-corner) var(--border-corner);
 }
+

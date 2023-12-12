@@ -26,6 +26,13 @@ function displayInfo(list) {
         const halfPrice = document.createElement("td");
         const fullPrice = document.createElement("td");
 
+        vehType.setAttribute("data-cell", "Rental Type");
+        maxCapa.setAttribute("data-cell", "Capacity");
+        priceHalf.setAttribute("data-cell", "Res. Price Half Day");
+        priceFull.setAttribute("data-cell", "Res. Price Full Day");
+        halfPrice.setAttribute("data-cell", "Walk. Price Half Day");
+        fullPrice.setAttribute("data-cell", "Walk. Price Full Day");
+
         vehType.innerHTML = vehicle.type;
         names.item(index).innerHTML = vehicle.type;
         maxCapa.innerHTML = vehicle.capacity;
