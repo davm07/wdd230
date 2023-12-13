@@ -19,10 +19,36 @@
     <link rel="icon" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <title>Attributions</title>
 </head>
 <body>
-    <main>
+    <header>
+        <div class="logo-wraper">
+            <img src="images/logo.webp" alt="Scoots Logo" width="44" height="44" loading="lazy">
+        </div>
+        <h1 class="title-wraper">Scoots</h1>
+        <nav>
+            <button class="menu-btn" aria-label="Main Menu">
+                <svg viewBox="0 0 100 100">
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservation</a></li>
+                <li class="contact-btn"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="attribution">
+        <h2 class="pg-title">Attributions</h2>
         <p>Logo Icon thanks too <a href="https://www.flaticon.com/free-icons/moped" title="moped icons">Moped icons created by Freepik - Flaticon</a></p>
         <p>Hero image thanks too Photo by <a href="https://unsplash.com/@merittthomas?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Meritt Thomas</a> on <a href="https://unsplash.com/photos/white-plastic-armchairs-on-beach-shore-during-daytime-xOw42hIKonI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </p>
@@ -31,5 +57,30 @@
         <p>Hamburger menu button animation <a href="https://codepen.io/ainalem/pen/wvKOEMV">Mikael Ainalem codepen</a></p>
         <p>Weather information provided thanks too <a href="https://openweathermap.org/">Open Weather API</a></p>
     </main>
+    <footer>
+        <div class="logo-wraper">
+            <img src="images/logo.webp" alt="Scoots Logo" width="60" height="60" loading="lazy">
+            <p>&copy; Scoots <span id="current-year"></span></p>
+        </div>
+        <div class="footer-contact">
+            <a href="mailto:scoots.coz@gmail.com">scoots.coz@gmail.com</a>
+            <p class="address">
+                <img src="images/locationSy.svg" alt="Location Symbol" width="18" height="18" class="social-icon" loading="lazy">
+                1st South Street, Downtown, Cozumel, Q.R., 77660
+            </p>
+            <p class="address"> 
+                <img src="images/locationSy.svg" alt="Location Symbol" width="18" height="18" class="social-icon" loading="lazy">
+                Transversal Highway km 5.5, Cozumel, Q.R., 77660
+            </p>
+            <p>+52 987 879 7000</p>
+        </div>
+        <div class="ft-socials">
+            <a href="https://www.facebook.com/groups/cozumel4yougroup/" aria-label="Facebook Link"><img src="images/facebook.svg" alt="Facebook Link" width="44" height="44" class="social-icon" loading="lazy"></a>
+            <a href="https://www.instagram.com/mycozumel/?hl=es"><img src="images/instagram.svg" alt="Instagram Link" width="44" height="44" class="social-icon" loading="lazy"></a>
+            <a href="https://twitter.com/OfficialCozumel"><img src="images/twitter.svg" alt="Twitter Link" width="44" height="44" class="social-icon" loading="lazy"></a>
+        </div>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

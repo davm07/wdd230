@@ -605,6 +605,6 @@ td::before {
     max-width: 30rem;
 }
 
-.conf-page {
+.conf-page, .attribution {
     min-height: 30rem;
 }
