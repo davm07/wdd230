@@ -203,7 +203,7 @@ header {
     background-color: var(--tertiary-color);
 }
 
-.active::before {
+.active::before, .open .active:hover::before{
     content: url(../images/pin.svg);
     filter: invert(21%) sepia(7%) saturate(1026%) hue-rotate(169deg) brightness(99%) contrast(89%);
 }
@@ -212,7 +212,7 @@ header {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);
 }
 
-.contact-btn .active::before {
+.contact-btn .active::before, .open .active::before{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);
 }
 
