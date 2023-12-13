@@ -105,6 +105,10 @@
     }
 
     /*------Reservation Page------*/
+    .res-container {
+        gap: 1.5rem;
+    }
+
     .agreements li, #res-form label {
         font-size: 1rem;
     }
