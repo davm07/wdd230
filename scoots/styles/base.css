@@ -523,6 +523,8 @@ td::before {
     background-color: var(--tertiary-color);
     color: var(--section-color-02);
     font-size: 1rem;
+    transition: all .3s ease;
+    cursor: pointer;
 }
 
 .cont-agreements {
@@ -603,6 +605,7 @@ td::before {
     background-color: var(--section-color-01);
     color: var(--secondary-color);
     max-width: 30rem;
+    transition: all .3s ease;
 }
 
 .conf-page, .attribution {

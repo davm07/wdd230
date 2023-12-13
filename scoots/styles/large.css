@@ -68,7 +68,7 @@
         transition: all .3s ease;
     }
 
-    .btn-cta:hover {
+    .btn-cta:hover, .res-btn:hover {
         background-color: var(--secondary-color);
     }
 
@@ -130,6 +130,10 @@
 
     .agreements li, #res-form label {
         font-size: 1rem;
+    }
+
+    #inquiry-form .res-btn:hover {
+        background-color: var(--section-color-02);
     }
 
     #contact-cont {
