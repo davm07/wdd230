@@ -112,4 +112,9 @@
     .agreements li, #res-form label {
         font-size: 1rem;
     }
+
+    #contact-cont {
+        grid-template-columns: 350px 1fr;
+        gap: 1.5rem;
+    }
 }

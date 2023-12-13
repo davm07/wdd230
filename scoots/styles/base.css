@@ -562,8 +562,10 @@ td::before {
 }
 
 #inquiry-form {
+    margin: 1rem auto;
     background-color: var(--secondary-color);
     color: var(--section-color-02);
+    max-width: 30rem;
 }
 
 #inquiry-form h3{
@@ -587,6 +589,7 @@ td::before {
 #inquiry-form .res-btn {
     background-color: var(--section-color-01);
     color: var(--secondary-color);
+    max-width: 30rem;
 }
 
 .conf-page {
