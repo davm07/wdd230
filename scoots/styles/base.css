@@ -371,7 +371,7 @@ footer a {
 }
 
 /*--------------------------Rentals page--------------------------*/
-.second-page h2, .third-page h2, .fourth-page h2{
+.pg-title{
     color: var(--tertiary-color);
 }
 
@@ -468,7 +468,7 @@ td::before {
     border: 1px solid var(--secondary-color);
     border-radius: var(--border-corner);
     margin: 0 0 1.2rem 0;
-    padding: .8rem;
+    padding: .6rem;
 }
 
 #res-form legend, #inquiry-form form legend{
@@ -518,6 +518,7 @@ td::before {
     margin-bottom: 1rem;
     border-radius: var(--border-corner);
     color: var(--section-color-01);
+    height: fit-content;
 }
 
 .cont-agreements h3 {
@@ -586,4 +587,8 @@ td::before {
 #inquiry-form .res-btn {
     background-color: var(--section-color-01);
     color: var(--secondary-color);
+}
+
+.conf-page {
+    min-height: 30rem;
 }

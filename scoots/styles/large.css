@@ -1,7 +1,7 @@
 @media screen and (min-width: 960px) {
     header {
         justify-content: space-between;
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 
     header .logo-wraper img{
@@ -13,7 +13,7 @@
         margin: 2rem 0;
     }
 
-    .first-page section {
+    .first-page section, .third-page section, .third-page #res-form {
         padding: 1.5rem;
     }
     
@@ -80,7 +80,7 @@
     }
 
     footer {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     .container-final {
@@ -102,5 +102,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+    }
+
+    /*------Reservation Page------*/
+    .agreements li, #res-form label {
+        font-size: 1rem;
     }
 }

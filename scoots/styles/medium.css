@@ -8,7 +8,7 @@
     }
 
     main {
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 
     footer {
@@ -128,5 +128,12 @@
 
     td::before {
         content: "";
+    }
+
+    /*------Reservation Page------*/
+    .res-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
     }
 }
